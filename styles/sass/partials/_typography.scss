@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $bodyFont, sans-serif;
+    font-size: $bodyFontSize;
+    font-weight: $bodyWeight;
+    line-height: $bodyLineHeight;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav a,
+button {
+    font-family: $headingFont, sans-serif;
+    font-weight: $headingWeight;
+    color: white;
+    text-transform: uppercase;
+    @include boxReset;
+}
+
+h1 {
+    font-size: $headerSize;
+    line-height: $headerHeight;
+}
+
+h2 {
+    font-size: $heading2Size;
+    line-height: $heading2Height;
+}
+
+h3 {
+    font-size: $heading3Size;
+    letter-spacing: $heading3Spacing;
+    text-align: center;
+}
+
+h4 {
+    font-size: $heading4Size;
+    letter-spacing: $heading4Spacing;
+}
+
+nav {
+    font-family: $navFont, sans-serif;
+    font-size: $navigationFontSize;
+    line-height: $navigationLineHeight;
+    letter-spacing: $navigationSpacing;
+    text-align: center;
+}
+
+button {
+    font-family: $buttonFont, sans-serif;
+    font-size: $buttonFontSize;
+    line-height: $buttonLineHeight;
+    letter-spacing: $buttonSpacing;
+    text-align: center;
+}

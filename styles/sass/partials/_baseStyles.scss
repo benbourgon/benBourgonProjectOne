@@ -1,0 +1,31 @@
+body {
+    background-color: $darkBlueGrey;
+
+    ul {
+        @include boxReset;
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    button {
+        @include boxReset;
+        background: none;
+        border: none;
+    }
+}
