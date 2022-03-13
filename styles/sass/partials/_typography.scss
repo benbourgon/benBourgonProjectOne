@@ -1,7 +1,10 @@
+// Set initial font size so that 1rem = 10px;
+
 html {
     font-size: 62.5%;
 }
 
+// Universal font styling
 body {
     font-family: $bodyFont, sans-serif;
     font-size: $bodyFontSize;
@@ -10,6 +13,7 @@ body {
     color: white;
 }
 
+// Headers, nav, button
 h1,
 h2,
 h3,
@@ -23,6 +27,7 @@ button {
     @include boxReset;
 }
 
+// Headers
 h1 {
     font-size: $headerSize;
     line-height: $headerHeight;
@@ -44,6 +49,7 @@ h4 {
     letter-spacing: $heading4Spacing;
 }
 
+// navigation
 nav {
     font-family: $navFont, sans-serif;
     font-size: $navigationFontSize;
@@ -51,7 +57,7 @@ nav {
     letter-spacing: $navigationSpacing;
     text-align: center;
 }
-
+// button
 button {
     font-family: $buttonFont, sans-serif;
     font-size: $buttonFontSize;

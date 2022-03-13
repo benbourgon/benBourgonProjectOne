@@ -1,0 +1,47 @@
+header {
+    position: relative;
+    height: 100vh;
+
+    .headerBG {
+        background-image: url(../assets/header-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    nav {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        margin-bottom: 15vh;
+
+        .hamburger {
+            position: absolute;
+            left: -5000px;
+        }
+
+        ul {
+            display: flex;
+            flex-basis: 50%;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+    }
+    h1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: calc(100% / 3)
+    }
+    .goldfish {
+        position: absolute;
+        height: 75vh;
+        right: 0;
+        top: 20%;
+        z-index: 10;
+    }
+}
