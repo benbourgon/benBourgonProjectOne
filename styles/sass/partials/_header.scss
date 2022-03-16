@@ -3,7 +3,7 @@ header {
     margin-bottom: 75px;
 
     .headerBG {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/header-image.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/header-image.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -12,12 +12,11 @@ header {
     .wrapper {
         display: flex;
         flex-direction: column;
-        position: relative;
     }
     nav {
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 15vh;
+        margin-bottom: 105px;
 
         .hamburger {
             position: absolute;
@@ -30,6 +29,9 @@ header {
                 margin-top: 20px;
                 flex-wrap: wrap;
             }
+        .homeNav {
+            color: $robinEggBlue;
+        }
     }
 
     h1 {

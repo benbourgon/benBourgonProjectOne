@@ -45,4 +45,20 @@ body {
             outline: 4px solid $robinEggBlue;
         }
     }
+    h3 {
+        margin-bottom: 25px;
+    }
+
+    .findOutMore {
+        background-color: $robinEggBlue;
+        font-family: $buttonFont, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: $buttonWeight;
+        font-size: $buttonFontSize;
+        line-height: $buttonLineHeight;
+        color: $darkBlueGrey;
+        padding: 10px 40px;
+        margin: 25px 0;
+    }
 }  

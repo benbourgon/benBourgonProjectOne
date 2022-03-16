@@ -330,14 +330,29 @@ body button {
 body button:focus, body button:hover {
   outline: 4px solid #86E0F9;
 }
+body h3 {
+  margin-bottom: 25px;
+}
+body .findOutMore {
+  background-color: #86E0F9;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #0C1423;
+  padding: 10px 40px;
+  margin: 25px 0;
+}
 
 header {
   height: 100vh;
   margin-bottom: 75px;
 }
 header .headerBG {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/header-image.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/header-image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/header-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/header-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -351,7 +366,6 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
 }
 header nav {
   display: -webkit-box;
@@ -360,7 +374,7 @@ header nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 15vh;
+  margin-bottom: 105px;
 }
 header nav .hamburger {
   position: absolute;
@@ -379,6 +393,9 @@ header nav ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+header nav .homeNav {
+  color: #86E0F9;
+}
 header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,4 +413,22 @@ header .goldfish {
   width: 50%;
   right: 0;
   top: 175px;
+}
+
+.about {
+  padding: 50px 75px 100px 75px;
+  margin-bottom: 50px;
+}
+.about .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
 }

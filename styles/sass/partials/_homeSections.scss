@@ -1,0 +1,13 @@
+// Home - About Section - "What is Under the Sea?"
+
+.about {
+    padding: 50px 75px 100px 75px;
+    margin-bottom: 50px;
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+}
