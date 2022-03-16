@@ -332,13 +332,15 @@ body button:focus, body button:hover {
 }
 
 header {
-  position: relative;
   height: 100vh;
+  margin-bottom: 75px;
 }
 header .headerBG {
-  background-image: url(../assets/header-image.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/header-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/header-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   height: 80vh;
 }
 header .wrapper {
@@ -349,12 +351,12 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -368,11 +370,11 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -391,8 +393,7 @@ header h1 {
 }
 header .goldfish {
   position: absolute;
-  height: 75vh;
+  width: 50%;
   right: 0;
-  top: 20%;
-  z-index: 10;
+  top: 175px;
 }

@@ -1,20 +1,21 @@
 header {
-    position: relative;
     height: 100vh;
+    margin-bottom: 75px;
 
     .headerBG {
-        background-image: url(../assets/header-image.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/header-image.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        position: relative;
         height: 80vh;
     }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
     nav {
         display: flex;
-        position: relative;
         justify-content: flex-end;
         margin-bottom: 15vh;
 
@@ -22,26 +23,27 @@ header {
             position: absolute;
             left: -5000px;
         }
-
         ul {
-            display: flex;
-            flex-basis: 50%;
-            justify-content: space-evenly;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
+                display: flex;
+                flex-basis: 40%;
+                justify-content: space-between;
+                margin-top: 20px;
+                flex-wrap: wrap;
+            }
     }
+
     h1 {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         width: calc(100% / 3)
     }
+
     .goldfish {
         position: absolute;
-        height: 75vh;
+        width: 50%;
         right: 0;
-        top: 20%;
-        z-index: 10;
+        top: 175px;
     }
+    
 }
