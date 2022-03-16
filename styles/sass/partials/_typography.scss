@@ -57,11 +57,13 @@ nav {
     letter-spacing: $navigationSpacing;
     text-align: center;
 }
-// button
-button {
+// button and stylized anchors
+button,
+a {
     font-family: $buttonFont, sans-serif;
     font-size: $buttonFontSize;
     line-height: $buttonLineHeight;
     letter-spacing: $buttonSpacing;
+    text-transform: uppercase;
     text-align: center;
 }

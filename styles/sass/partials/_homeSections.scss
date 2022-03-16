@@ -11,3 +11,64 @@
         width: 90%;
     }
 }
+
+// Home - News section - "New Additions" and "Meet Real Nemo"
+
+.news {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 75px;
+    background-color: $spruce;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;    
+
+    img {
+        width: 40%;
+        position: absolute;
+    }
+
+    .newAdditions,
+    .realNemo {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        .contentContainer {
+            display: flex;
+            flex-direction: column;
+            max-width: 45%
+        }
+    }
+    .newAdditions {
+        
+        .contentContainer {
+            text-align: left;
+            align-items: start;
+    
+            p {
+                padding: 0 35px 25px 0;
+            }
+        }
+    }
+    
+    
+    .realNemo .contentContainer {
+        text-align: right;
+        align-items: end;
+
+        p {
+            padding: 0 0 25px 35px;
+        }
+    }
+    .readMore {
+        background-color: $darkBlueGrey;
+        color: white;
+        margin-bottom: 25px;
+    }
+
+
+}
+    

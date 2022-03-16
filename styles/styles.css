@@ -281,11 +281,13 @@ nav {
   text-align: center;
 }
 
-button {
+button,
+a {
   font-family: "Barlow", sans-serif;
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 1px;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -303,7 +305,7 @@ body img {
   display: block;
 }
 body .wrapper {
-  max-width: 1260px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -311,6 +313,9 @@ body a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -335,15 +340,24 @@ body h3 {
 }
 body .findOutMore {
   background-color: #86E0F9;
-  font-family: "Barlow", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 32px;
   color: #0C1423;
   padding: 10px 40px;
   margin: 25px 0;
+}
+body .findOutMore:focus, body .findOutMore:hover {
+  outline: 4px solid white;
+}
+body .leftImage {
+  position: absolute;
+  left: 0;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+body .rightImage {
+  position: absolute;
+  right: 0;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 header {
@@ -415,6 +429,15 @@ header .goldfish {
   top: 175px;
 }
 
+footer {
+  text-align: center;
+  background-color: #86E0F9;
+  color: #0C1423;
+}
+footer p {
+  margin: 0 auto;
+}
+
 .about {
   padding: 50px 75px 100px 75px;
   margin-bottom: 50px;
@@ -431,4 +454,72 @@ header .goldfish {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+}
+
+.news {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 75px;
+  background-color: #0F614E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.news img {
+  width: 40%;
+  position: absolute;
+}
+.news .newAdditions,
+.news .realNemo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+.news .newAdditions .contentContainer,
+.news .realNemo .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 45%;
+}
+.news .newAdditions .contentContainer {
+  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.news .newAdditions .contentContainer p {
+  padding: 0 35px 25px 0;
+}
+.news .realNemo .contentContainer {
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.news .realNemo .contentContainer p {
+  padding: 0 0 25px 35px;
+}
+.news .readMore {
+  background-color: #0C1423;
+  color: white;
+  margin-bottom: 25px;
 }
