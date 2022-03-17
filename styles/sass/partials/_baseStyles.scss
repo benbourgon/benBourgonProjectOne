@@ -3,12 +3,6 @@
 body {
     background-color: $darkBlueGrey;
 
-    .maxWrapper {
-        max-width: 2260px;
-        margin: 0 auto;
-        position: relative;
-    }
-
     ul {
         @include boxReset;
         list-style: none;
