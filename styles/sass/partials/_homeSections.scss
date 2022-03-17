@@ -15,60 +15,71 @@
 // Home - News section - "New Additions" and "Meet Real Nemo"
 
 .news {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     margin-bottom: 75px;
     background-color: $spruce;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;    
+    position: relative;
 
     img {
-        width: 40%;
-        position: absolute;
+        max-width: 40%;
     }
 
-    .newAdditions,
+    .imageHalf {
+        flex-basis: 45%;
+    }
+    .leftImage {
+        position: absolute;
+        left: 0;
+        top: -40px;
+        box-shadow: 40px 39px 0px 0px #86E0F9;
+    }
+
+    .rightImage {
+        position: absolute;
+        right: 0px;
+        bottom: -40px;
+        box-shadow: -40px 39px 0px 0px #86E0F9;
+    }
+
+
+    .newAdditions {
+        display: flex;
+        justify-content: space-between;
+
+        .rightText {
+            flex-basis: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: start;
+        }
+    }
     .realNemo {
         display: flex;
         justify-content: space-between;
-        padding-top: 50px;
+        padding-top: 100px;
 
-        .contentContainer {
+        .leftText {
+            flex-basis: 45%;
             display: flex;
             flex-direction: column;
-            max-width: 45%
+            justify-content: space-between;
+            align-content: end;
+            text-align: right;
         }
-    }
-    .newAdditions {
-        
-        .contentContainer {
-            text-align: left;
-            align-items: start;
-    
-            p {
-                padding: 0 35px 25px 0;
-            }
-        }
-    }
-    
-    
-    .realNemo .contentContainer {
-        text-align: right;
-        align-items: end;
-
-        p {
-            padding: 0 0 25px 35px;
+        .readMore {
+            align-self: end;
         }
     }
     .readMore {
         background-color: $darkBlueGrey;
         color: white;
         margin-bottom: 25px;
+        width: 160px;
     }
-
-
 }
-    

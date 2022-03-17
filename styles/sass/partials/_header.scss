@@ -12,6 +12,7 @@ header {
     .wrapper {
         display: flex;
         flex-direction: column;
+        height: 80vh;
     }
     nav {
         display: flex;
@@ -38,7 +39,9 @@ header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: calc(100% / 3)
+        width: calc(100% / 3);
+        height: 100%;
+        justify-self: center;
     }
 
     .goldfish {

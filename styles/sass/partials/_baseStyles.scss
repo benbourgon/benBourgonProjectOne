@@ -3,6 +3,12 @@
 body {
     background-color: $darkBlueGrey;
 
+    .maxWrapper {
+        max-width: 2260px;
+        margin: 0 auto;
+        position: relative;
+    }
+
     ul {
         @include boxReset;
         list-style: none;
@@ -15,7 +21,7 @@ body {
     };
 
     .wrapper {
-        max-width: 1400px;
+        max-width: 1260px;
         width: 90%;
         margin: 0 auto;
     };
@@ -63,15 +69,5 @@ body {
             outline: 4px solid white;
         }
     }
-    .leftImage {
-        position: absolute;
-        left: 0;
-        flex-basis: 30%;
-    };
 
-    .rightImage {
-        position: absolute;
-        right: 0;
-        flex-basis: 30%;
-    }
 }  

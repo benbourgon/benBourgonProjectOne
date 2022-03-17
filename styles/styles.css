@@ -294,6 +294,11 @@ a {
 body {
   background-color: #0C1423;
 }
+body .maxWrapper {
+  max-width: 2260px;
+  margin: 0 auto;
+  position: relative;
+}
 body ul {
   margin: 0;
   padding: 0;
@@ -305,7 +310,7 @@ body img {
   display: block;
 }
 body .wrapper {
-  max-width: 1400px;
+  max-width: 1260px;
   width: 90%;
   margin: 0 auto;
 }
@@ -347,18 +352,6 @@ body .findOutMore {
 body .findOutMore:focus, body .findOutMore:hover {
   outline: 4px solid white;
 }
-body .leftImage {
-  position: absolute;
-  left: 0;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-body .rightImage {
-  position: absolute;
-  right: 0;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
 
 header {
   height: 100vh;
@@ -380,6 +373,7 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 80vh;
 }
 header nav {
   display: -webkit-box;
@@ -421,6 +415,8 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 33.3333333333%;
+  height: 100%;
+  justify-self: center;
 }
 header .goldfish {
   position: absolute;
@@ -457,8 +453,8 @@ footer p {
 }
 
 .news {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   margin-bottom: 75px;
   background-color: #0F614E;
   display: -webkit-box;
@@ -476,21 +472,37 @@ footer p {
   position: relative;
 }
 .news img {
-  width: 40%;
-  position: absolute;
+  max-width: 40%;
 }
-.news .newAdditions,
-.news .realNemo {
+.news .imageHalf {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.news .leftImage {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  -webkit-box-shadow: 40px 39px 0px 0px #86E0F9;
+          box-shadow: 40px 39px 0px 0px #86E0F9;
+}
+.news .rightImage {
+  position: absolute;
+  right: 0px;
+  bottom: -40px;
+  -webkit-box-shadow: -40px 39px 0px 0px #86E0F9;
+          box-shadow: -40px 39px 0px 0px #86E0F9;
+}
+.news .newAdditions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 50px;
 }
-.news .newAdditions .contentContainer,
-.news .realNemo .contentContainer {
+.news .newAdditions .rightText {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,28 +510,45 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: start;
 }
-.news .newAdditions .contentContainer {
-  text-align: left;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+.news .realNemo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
 }
-.news .newAdditions .contentContainer p {
-  padding: 0 35px 25px 0;
-}
-.news .realNemo .contentContainer {
+.news .realNemo .leftText {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: end;
   text-align: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
 }
-.news .realNemo .contentContainer p {
-  padding: 0 0 25px 35px;
+.news .realNemo .readMore {
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 .news .readMore {
   background-color: #0C1423;
   color: white;
   margin-bottom: 25px;
+  width: 160px;
 }
