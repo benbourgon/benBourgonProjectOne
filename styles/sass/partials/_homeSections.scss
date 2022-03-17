@@ -86,7 +86,7 @@
 
 // Home - Links section - "Locations, Community, Blog, Get In Touch"
 .links {
-    padding: 75px 0;
+    padding: 75px 0 25px 0;
     
     .wrapper {
         display: flex;
@@ -103,10 +103,12 @@
         flex-basis: 45%;
         justify-content: space-between;
         align-content: flex-start;
+        margin-top: 25px;
 
         .contentBox {
-            flex-basis: 79%;
-            margin-left: 20px;
+            flex-basis: 89%;
+            margin-left: 10px;
+            margin-top: 6px;
         }
     }
 
@@ -123,8 +125,8 @@
         }
     }
     .icon {
-        height: 75px;
-        width: 125px;
+        height: 48px;
+        width: 51px;
         background-color: $robinEggBlue;
         border-radius: 50%;
         position: relative;
@@ -136,9 +138,23 @@
             color: $darkBlueGrey;
         }
     }
-    .communityLink a {
-        top: -8%;
 
+    .locationsLink a {
+        font-size: $heading4Size;
+        top: -5%;
+        left: -19%
+    }
+    .communityLink a {
+        top: -7%;
+        left: -20%;
+    }
+    .blogLink a {
+        top: -7%;
+        left: -7%
+    }
+    .getInTouchLink a {
+        top: -6%;
+        left: -12%
     }
 }
 

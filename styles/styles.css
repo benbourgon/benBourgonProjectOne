@@ -549,7 +549,7 @@ footer p {
 }
 
 .links {
-  padding: 75px 0;
+  padding: 75px 0 25px 0;
 }
 .links .wrapper {
   display: -webkit-box;
@@ -578,14 +578,16 @@ footer p {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  margin-top: 25px;
 }
 .links .locationsLink .contentBox,
 .links .communityLink .contentBox,
 .links .blogLink .contentBox,
 .links .getInTouchLink .contentBox {
-  -ms-flex-preferred-size: 79%;
-      flex-basis: 79%;
-  margin-left: 20px;
+  -ms-flex-preferred-size: 89%;
+      flex-basis: 89%;
+  margin-left: 10px;
+  margin-top: 6px;
 }
 .links h4 a {
   text-align: left;
@@ -598,8 +600,8 @@ footer p {
   outline: none;
 }
 .links .icon {
-  height: 75px;
-  width: 125px;
+  height: 48px;
+  width: 51px;
   background-color: #86E0F9;
   border-radius: 50%;
   position: relative;
@@ -610,8 +612,22 @@ footer p {
   letter-spacing: 1px;
   color: #0C1423;
 }
+.links .locationsLink a {
+  font-size: 32px;
+  top: -5%;
+  left: -19%;
+}
 .links .communityLink a {
-  top: -8%;
+  top: -7%;
+  left: -20%;
+}
+.links .blogLink a {
+  top: -7%;
+  left: -7%;
+}
+.links .getInTouchLink a {
+  top: -6%;
+  left: -12%;
 }
 
 .profile {
