@@ -54,23 +54,23 @@
                     <h3>Discovering New Species</h3>
                     <p class="blogDateAuthor">Monday May 4th, 2019 by Dieula</p>
                     <div class="post">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis nobis itaque aliquid ducimus eum accusamus unde aspernatur modi nisi, accusantium ipsam cumque, assumenda vel?</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sequi delectus, quia ab perferendis voluptatum quisquam obcaecati voluptates totam ullam sed at laboriosam officiis exercitationem?</p>
-                        <p>Ipsa commodi alias blanditiis officia voluptatum eius maxime nesciunt tenetur reiciendis aperiam delectus sit non accusantium iure explicabo dolore magnam tempora, veniam temporibus quidem dolorum quasi nostrum labore incidunt! Eveniet aspernatur cum eaque alias blanditiis adipisci, reiciendis hic fugit aliquam animi laboriosam delectus maxime soluta eius voluptates, illo illum voluptatum.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia officia architecto facilis ducimus autem repudiandae deserunt iusto laudantium sapiente asperiores!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequuntur, autem molestiae quaerat tempor consectetur at nobis incidunt ab iusto.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo alias accusamus molestias perspiciatis voluptate, vero quod praesentium architecto quo non recusandae, a natus. Soluta facere sunt iste nulla dolores distinctio quibusdam voluptates nemo. Amet, odit!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima neque sed, provident voluptatem ea ipsum cumque cupiditate sapiente non fugiat officiis pariatur doloremque quas expedita vero repudiandae temporibus minus quaerat similique distinctio repellendus accusamus optio. Quaerat deleniti facilis cum doloremque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cupiditate, corporis culpa magni quos libero eius expedita architecto aperiam tempore quibusdam exercitationem saepe sunt aut quia consequuntur voluptatum incidunt at sapiente dicta minus eligendi iure maxime. Neque sequi doloremque inventore porro ratione excepturi ut praesentium? Pariatur, consectetur. Laudantium itaque eaque facere officiis cum. Totam, numquam vitae qui mollitia enim magnam, quasi necessitatibus saepe quos sint quae, reiciendis hic fugit maiores!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo laboriosam minima, repellendus laudantium dolores ducimus inventore, ratione similique animi temporibus hic deleniti nihil consequuntur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, deleniti necessitatibus saepe temporibus dolore a sequi sed ut omnis ipsum blanditiis iste, facere eligendi.</p>
                     </div>
                 </div>
                 <div class="comments">
                     <h4>Comments:</h4>
-                    <div class="comment1">
+                    <div class="comment comment1">
                         <img src="./assets/comment-1.jpg" alt="profile photo" class="profilePicture">
                         <div class="textBox">
                             <p class="commentDateAuthor">Tuesday October 9th, 2018 by Jeremy</p>
                             <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic deleniti temporibus velit eaque minus, unde blanditiis rerum itaque, perferendis autem aspernatur enim eius. Inventore magnam illum laboriosam possimus excepturi!</p>
                         </div>
                     </div>
-                    <div class="comment2">
+                    <div class="comment comment2">
                         <img src="./assets/comment-2.jpg" alt="profile photo" class="profilePicture">
                         <div class="textBox">
                             <p class="commentDateAuthor">Wednesday October 10th, 2018 by Julia</p>
@@ -82,16 +82,18 @@
                 </div>
                 <form action="POST" class="commentForm">
                     <label for="name" class="sr-only">Please enter your name:</label>
-                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="name" name="name"
+                    class="name" placeholder="Name" required>
                     <label for="email" class="sr-only">Please enter your email address:</label>
-                    <input type="email" id="email" name="email" placeholder="Email address">
+                    <input type="email" id="email" name="email"
+                    class="email" placeholder="Email address" required>
                     <label for="commentArea" class="sr-only">Please enter your comment:</label>
-                    <textarea name="commentArea" id="commentArea" cols="30" rows="10">Comment</textarea>
+                    <textarea name="commentArea" id="commentArea" class="cols="30" rows="5" placeholder= "Comment" required></textarea>
                     <button type="submit" name="postComment" class="postComment">Post Comment</button>
                 </form>
             </section>
         </div>
-        </main>
+    </main>
     <footer>
         <div class="wrapper">
             <p>Copyright © 2018 HackerYou</p>

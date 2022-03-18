@@ -67,3 +67,11 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
+
+// Form elements
+input,
+textarea {
+    font-weight: $bodyWeight;
+    line-height: $bodyLineHeight;
+    color: white;
+}

@@ -62,17 +62,79 @@
 
 .blogAbout {
     flex-basis: 29%;
-    background-color: $spruce;
     padding: 365px 50px 0 25px;
 }
+
+// Styling the blog post itself
 .blogPost {
     flex-basis: 65%;
     padding: 171px 0px 75px 10px;
     margin: 0 auto;
+
+    h3 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
     .postText {
         width: 100%;
         border-bottom: 10px solid $robinEggBlue;
         border-left: 10px solid $robinEggBlue;
-        padding: 50px 0 0 65px;
+        padding: 50px 0 20px 65px;
+
+        .blogDateAuthor {
+            margin: 0 0 50px 0;
+        }
+
+        .post p {
+            margin: 0 0;
+        }
+    }
+// Comment section
+    .comments {
+        padding-top: 30px;
+        padding-left: 40px;
+
+        h4 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .comment {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
+
+        p {
+            margin-top: 10px;
+        }
+
+        img {
+            flex-basis: 14%;
+            max-width: 91px;
+            max-height: 89px;
+            margin-top: 8px;
+        }
+        .commentDateAuthor {
+            margin: 0;
+        }
+        .textBox {
+            flex-basis: 84%;
+        }
+    }
+
+// Style the blog comment form
+
+    form {
+        input {
+            background-color: $darkBlueGrey;
+        }
+        textarea {
+            background-color: $darkBlueGrey;
+        }
+        button {
+            background-color: $spruce;
+        }
     }
 }

@@ -1,0 +1,40 @@
+// Form styling
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input {
+        flex-basis: 47%;
+        color: white;
+        padding: 20px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 2px solid $robinEggBlue;
+
+        &:hover,
+        &:focus {
+            border: 2px solid $robinEggBlue
+        }
+
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+
+    textarea,
+    button {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        border: 2px solid $robinEggBlue;
+        padding: 20px;
+        resize: none;
+
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+}

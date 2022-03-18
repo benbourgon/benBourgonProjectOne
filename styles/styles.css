@@ -291,6 +291,13 @@ a {
   text-align: center;
 }
 
+input,
+textarea {
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+}
+
 body {
   background-color: #0C1423;
 }
@@ -537,10 +544,6 @@ footer p {
       align-content: end;
   text-align: right;
 }
-.news .realNemo .readMore {
-  -ms-flex-item-align: end;
-      align-self: end;
-}
 .news .readMore {
   background-color: #0C1423;
   color: white;
@@ -747,7 +750,6 @@ footer p {
 .blogAbout {
   -ms-flex-preferred-size: 29%;
       flex-basis: 29%;
-  background-color: #0F614E;
   padding: 365px 50px 0 25px;
 }
 
@@ -757,9 +759,128 @@ footer p {
   padding: 171px 0px 75px 10px;
   margin: 0 auto;
 }
+.blogPost h3 {
+  text-align: left;
+  margin-bottom: 15px;
+}
 .blogPost .postText {
   width: 100%;
   border-bottom: 10px solid #86E0F9;
   border-left: 10px solid #86E0F9;
-  padding: 50px 0 0 65px;
+  padding: 50px 0 20px 65px;
+}
+.blogPost .postText .blogDateAuthor {
+  margin: 0 0 50px 0;
+}
+.blogPost .postText .post p {
+  margin: 0 0;
+}
+.blogPost .comments {
+  padding-top: 30px;
+  padding-left: 40px;
+}
+.blogPost .comments h4 {
+  margin-bottom: 40px;
+}
+.blogPost .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+}
+.blogPost .comment p {
+  margin-top: 10px;
+}
+.blogPost .comment img {
+  -ms-flex-preferred-size: 14%;
+      flex-basis: 14%;
+  max-width: 91px;
+  max-height: 89px;
+  margin-top: 8px;
+}
+.blogPost .comment .commentDateAuthor {
+  margin: 0;
+}
+.blogPost .comment .textBox {
+  -ms-flex-preferred-size: 84%;
+      flex-basis: 84%;
+}
+.blogPost form input {
+  background-color: #0C1423;
+}
+.blogPost form textarea {
+  background-color: #0C1423;
+}
+.blogPost form button {
+  background-color: #0F614E;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #86E0F9;
+}
+form input:hover, form input:focus {
+  border: 2px solid #86E0F9;
+}
+form input::-webkit-input-placeholder {
+  opacity: 1;
+}
+form input::-moz-placeholder {
+  opacity: 1;
+}
+form input:-ms-input-placeholder {
+  opacity: 1;
+}
+form input::-ms-input-placeholder {
+  opacity: 1;
+}
+form input::placeholder {
+  opacity: 1;
+}
+form textarea,
+form button {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 30px;
+}
+form textarea {
+  border: 2px solid #86E0F9;
+  padding: 20px;
+  resize: none;
+}
+form textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+form textarea::-moz-placeholder {
+  opacity: 1;
+}
+form textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+form textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+form textarea::placeholder {
+  opacity: 1;
 }
