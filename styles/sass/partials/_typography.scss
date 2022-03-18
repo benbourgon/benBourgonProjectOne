@@ -74,4 +74,26 @@ textarea {
     font-weight: $bodyWeight;
     line-height: $bodyLineHeight;
     color: white;
+    font-family: $bodyFont, sans-serif;
+}
+
+// Blog - About section typography
+
+.blogAbout {
+    h4 {
+        font-size: $blogHeading4Size;
+        margin-bottom: 15px;
+    }
+
+    a {
+        outline: none;
+        border: none;
+        display: inline;
+        @include boxReset;
+        font-family: $bodyFont, sans-serif;
+        text-transform: none;
+        font-weight: $bodyWeight;
+        letter-spacing: normal;
+        line-height: $bodyLineHeight;
+    }
 }

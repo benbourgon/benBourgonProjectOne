@@ -63,6 +63,27 @@
 .blogAbout {
     flex-basis: 29%;
     padding: 365px 50px 0 25px;
+    background-color: $spruce;
+    display: inline-block;
+    height: 800px;
+
+    a:hover,
+    a:focus {
+        outline: none;
+        color: $robinEggBlue;
+        font-weight: bold;
+        border-bottom: 2px solid $robinEggBlue;
+    }
+    .blogAboutText,
+    .blogRecentPosts {
+        padding: 10px;
+    }
+
+    ul {
+        list-style: inside;
+        list-style-type: disc;
+        line-height: $bodyLineHeight;
+    }
 }
 
 // Styling the blog post itself

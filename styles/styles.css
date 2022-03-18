@@ -232,9 +232,9 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 3.2rem;
   color: white;
 }
 
@@ -253,40 +253,40 @@ button {
 }
 
 h1 {
-  font-size: 138px;
-  line-height: 126px;
+  font-size: 13.8rem;
+  line-height: 12.6rem;
 }
 
 h2 {
-  font-size: 80px;
-  line-height: 92px;
+  font-size: 8rem;
+  line-height: 9.2rem;
 }
 
 h3 {
-  font-size: 42px;
-  letter-spacing: 1px;
+  font-size: 4.2rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
 h4 {
-  font-size: 32px;
-  letter-spacing: 1px;
+  font-size: 3.2rem;
+  letter-spacing: 0.1rem;
 }
 
 nav {
   font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
 button,
 a {
   font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -294,8 +294,26 @@ a {
 input,
 textarea {
   font-weight: 400;
-  line-height: 32px;
+  line-height: 3.2rem;
   color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.blogAbout h4 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+.blogAbout a {
+  outline: none;
+  border: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 3.2rem;
 }
 
 body {
@@ -595,8 +613,8 @@ footer p {
 .links h4 a {
   text-align: left;
   padding-left: 0;
-  font-size: 32px;
-  letter-spacing: 1px;
+  font-size: 3.2rem;
+  letter-spacing: 0.1rem;
 }
 .links h4 a:hover, .links h4 a:focus {
   color: #86E0F9;
@@ -612,11 +630,11 @@ footer p {
 .links .icon a {
   position: absolute;
   font-size: 2.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: #0C1423;
 }
 .links .locationsLink a {
-  font-size: 32px;
+  font-size: 3.2rem;
   top: -5%;
   left: -19%;
 }
@@ -751,6 +769,25 @@ footer p {
   -ms-flex-preferred-size: 29%;
       flex-basis: 29%;
   padding: 365px 50px 0 25px;
+  background-color: #0F614E;
+  display: inline-block;
+  height: 800px;
+}
+.blogAbout a:hover,
+.blogAbout a:focus {
+  outline: none;
+  color: #86E0F9;
+  font-weight: bold;
+  border-bottom: 2px solid #86E0F9;
+}
+.blogAbout .blogAboutText,
+.blogAbout .blogRecentPosts {
+  padding: 10px;
+}
+.blogAbout ul {
+  list-style: inside;
+  list-style-type: disc;
+  line-height: 3.2rem;
 }
 
 .blogPost {
@@ -830,6 +867,8 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 form input {
   -ms-flex-preferred-size: 47%;
@@ -841,7 +880,7 @@ form input {
   border-bottom: 2px solid #86E0F9;
 }
 form input:hover, form input:focus {
-  border: 2px solid #86E0F9;
+  border-bottom: 2px solid white;
 }
 form input::-webkit-input-placeholder {
   opacity: 1;
@@ -869,6 +908,9 @@ form textarea {
   padding: 20px;
   resize: none;
 }
+form textarea:hover, form textarea:focus {
+  border: 2px solid white;
+}
 form textarea::-webkit-input-placeholder {
   opacity: 1;
 }
@@ -883,4 +925,8 @@ form textarea::-ms-input-placeholder {
 }
 form textarea::placeholder {
   opacity: 1;
+}
+form button:hover,
+form button:focus {
+  outline: 4px solid white;
 }
