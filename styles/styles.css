@@ -373,6 +373,79 @@ body .findOutMore:focus, body .findOutMore:hover {
   outline: 4px solid white;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+form input {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #86E0F9;
+}
+form input:hover, form input:focus {
+  border-bottom: 2px solid white;
+}
+form input::-webkit-input-placeholder {
+  opacity: 1;
+}
+form input::-moz-placeholder {
+  opacity: 1;
+}
+form input:-ms-input-placeholder {
+  opacity: 1;
+}
+form input::-ms-input-placeholder {
+  opacity: 1;
+}
+form input::placeholder {
+  opacity: 1;
+}
+form textarea,
+form button {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 30px;
+}
+form textarea {
+  border: 2px solid #86E0F9;
+  padding: 20px;
+  resize: none;
+}
+form textarea:hover, form textarea:focus {
+  border: 2px solid white;
+}
+form textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+form textarea::-moz-placeholder {
+  opacity: 1;
+}
+form textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+form textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+form textarea::placeholder {
+  opacity: 1;
+}
+form button:hover,
+form button:focus {
+  outline: 4px solid white;
+}
+
 header {
   height: 100vh;
   margin-bottom: 75px;
@@ -613,12 +686,14 @@ footer p {
 .links h4 a {
   text-align: left;
   padding-left: 0;
+  padding-right: 0;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
 }
 .links h4 a:hover, .links h4 a:focus {
   color: #86E0F9;
   outline: none;
+  border-bottom: 2px solid #86E0F9;
 }
 .links .icon {
   height: 48px;
@@ -627,11 +702,18 @@ footer p {
   border-radius: 50%;
   position: relative;
 }
+.links .icon:hover, .links .icon:focus {
+  background-color: white;
+  outline: 4px solid #86E0F9;
+}
 .links .icon a {
   position: absolute;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
   color: #0C1423;
+}
+.links .icon a:hover, .links .icon a:focus {
+  outline: none;
 }
 .links .locationsLink a {
   font-size: 3.2rem;
@@ -717,7 +799,6 @@ footer p {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 80vh;
 }
 .blogHeader .blogH2 {
   width: 50%;
@@ -858,75 +939,44 @@ footer p {
   background-color: #0F614E;
 }
 
-form {
+.contactBody {
+  height: 100vh;
+}
+
+.contactHeader {
+  height: 65vh;
+}
+.contactHeader .contactHeaderBG {
+  height: 65vh;
+  background-image: url("../assets/contact-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactHeader .homeNav {
+  color: white;
+}
+.contactHeader .contactNav {
+  color: #86E0F9;
+}
+.contactHeader .contactH2 {
+  width: 70%;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.contactMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  margin: 100px auto;
 }
-form input {
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
-  color: white;
-  padding: 20px;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 2px solid #86E0F9;
+.contactMain .contactInfo {
+  -ms-flex-preferred-size: 19%;
+      flex-basis: 19%;
 }
-form input:hover, form input:focus {
-  border-bottom: 2px solid white;
-}
-form input::-webkit-input-placeholder {
-  opacity: 1;
-}
-form input::-moz-placeholder {
-  opacity: 1;
-}
-form input:-ms-input-placeholder {
-  opacity: 1;
-}
-form input::-ms-input-placeholder {
-  opacity: 1;
-}
-form input::placeholder {
-  opacity: 1;
-}
-form textarea,
-form button {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  margin-bottom: 30px;
-}
-form textarea {
-  border: 2px solid #86E0F9;
-  padding: 20px;
-  resize: none;
-}
-form textarea:hover, form textarea:focus {
-  border: 2px solid white;
-}
-form textarea::-webkit-input-placeholder {
-  opacity: 1;
-}
-form textarea::-moz-placeholder {
-  opacity: 1;
-}
-form textarea:-ms-input-placeholder {
-  opacity: 1;
-}
-form textarea::-ms-input-placeholder {
-  opacity: 1;
-}
-form textarea::placeholder {
-  opacity: 1;
-}
-form button:hover,
-form button:focus {
-  outline: 4px solid white;
+.contactMain .contactFormSection {
+  -ms-flex-preferred-size: 69%;
+      flex-basis: 69%;
 }

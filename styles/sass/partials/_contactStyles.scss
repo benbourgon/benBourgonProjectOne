@@ -1,0 +1,42 @@
+.contactBody {
+    height: 100vh;
+}
+
+// Contact - <header> styling
+.contactHeader {
+    height: 65vh;
+
+    .contactHeaderBG {
+        height: 65vh;
+        background-image: url("../assets/contact-header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .homeNav {
+        color: white;
+    }
+    .contactNav {
+        color: $robinEggBlue;
+    }
+
+    .contactH2 {
+        width: 70%;
+        text-align: right;
+        margin-top: 30px;
+    }
+}
+
+// Contact - <main> styling
+
+.contactMain {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+
+    .contactInfo {
+        flex-basis: 19%
+    }
+    .contactFormSection {
+        flex-basis: 69%;
+    }
+}

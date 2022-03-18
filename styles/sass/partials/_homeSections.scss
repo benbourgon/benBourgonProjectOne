@@ -113,6 +113,7 @@
     h4 a {
         text-align: left;
         padding-left: 0;
+        padding-right: 0;
         font-size: $heading4Size;
         letter-spacing: $heading4Spacing;
 
@@ -120,6 +121,7 @@
         &:focus {
             color: $robinEggBlue;
             outline: none;
+            border-bottom: 2px solid $robinEggBlue;
         }
     }
     .icon {
@@ -129,11 +131,22 @@
         border-radius: 50%;
         position: relative;
 
+        &:hover,
+        &:focus {
+            background-color: white;
+            outline: 4px solid $robinEggBlue;
+        }
+
         a {
             position: absolute;
             font-size: 2.5rem;
             letter-spacing: $heading4Spacing;
             color: $darkBlueGrey;
+
+            &:hover,
+            &:focus {
+                outline: none;
+            }
         }
     }
 

@@ -13,7 +13,67 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/89439f417a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body id="contactBody">
+    <header class="contactHeader">
+        <div class="contactHeaderBG">
+            <div class="wrapper">
+                <nav>
+                    <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+                    <ul>
+                        <li><a href="index.html" class="homeNav">Home</a></li>
+                        <li><a href="index.html#about" class="aboutNav">About</a></li>
+                        <li><a href="./blog.html" class="blogNav">Blog</a></li>
+                        <li><a href="#" class="contactNav">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2 class="contactH2">Get in Touch</h2>
+            </div>
+        </div>
+    </header>
+    <main class="contactMain">
+        <section class="contactInfo" id="contactInfo">
+            <div class="wrapper">
+                <div class="socialIcons">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="mailto:info@email.com"><h4>info@email.com</h4></a>
+                <p>123-456-7890</p>
+                <p>123 Queen St West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </div>
+        </section>
+        <section class="contactFormSection" id="contactFormSection">
+            <div class="wrapper">
+                <form action="POST" class="contactForm">
+                        <label for="name" class="sr-only">Please enter your name:</label>
+                        <input type="text" id="name" name="name" class="name" placeholder="Name" required>
+                        <label for="email" class="sr-only">Please enter your email address:</label>
+                        <input type="email" id="email" name="email" class="email" placeholder="Email address" required>
+                        <label for="messageArea" class="sr-only">Please enter your message:</label>
+                        <textarea name="messageArea" id="messageArea" class="cols=" 30" rows="5" placeholder="Message" required></textarea>
+                        <button type="submit" name="submitButton" class="submitButton"> Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2018 HackerYou</p>
+        </div>
+    </footer>
 </body>
 </html>
