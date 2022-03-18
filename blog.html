@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under the Sea: Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class ="blogBody">
+    <header class="blogHeader">
+        <div class="blogHeaderBG">
+            <div class="wrapper">
+                <nav>
+                    <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+                    <ul>
+                        <li><a href="./index.html" class="homeNav">Home</a></li>
+                        <li><a href="./index.html#about" class="aboutNav">About</a></li>
+                        <li><a href="./blog.html" class="blogNav">Blog</a></li>
+                        <li><a href="./contact.html" class="contactNav">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2 class="blogH2">Blog</h2>
+            </div>
+        </div>
+    </header>
+    <main class="blogMain">
+        <img src="./assets/side-blog-image.jpg" alt="A shark swims with small fish in an aquarium." class="blogSharkImage">
+        <img src="./assets/blog-post-image.jpg" alt="Fish swim among anemones and sea plant life." class="blogFishImage">
+        <div class="wrapper">
+            <section class="blogAbout">
+                <div class="blogAboutText">
+                    <h4>About Under the Sea</h4>
+                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
+                    <a href="#">Find out more</a>
+                </div>
+                <div class="blogRecentPosts">
+                    <h4>Recent Posts</h4>
+                    <ul class="postsList">
+                        <li><a href="#">Donec facilisis tortor ut</a></li>
+                        <li><a href="#">Augue lacinia et viverra</a></li>
+                        <li><a href="#">Semper sed sapien metus</a></li>
+                        <li><a href="#">Scelerisque nec pharetra id</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="blogPost">
+                <div class="postText">
+                    <h3>Discovering New Species</h3>
+                    <p class="blogDateAuthor">Monday May 4th, 2019 by Dieula</p>
+                    <div class="post">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis nobis itaque aliquid ducimus eum accusamus unde aspernatur modi nisi, accusantium ipsam cumque, assumenda vel?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sequi delectus, quia ab perferendis voluptatum quisquam obcaecati voluptates totam ullam sed at laboriosam officiis exercitationem?</p>
+                        <p>Ipsa commodi alias blanditiis officia voluptatum eius maxime nesciunt tenetur reiciendis aperiam delectus sit non accusantium iure explicabo dolore magnam tempora, veniam temporibus quidem dolorum quasi nostrum labore incidunt! Eveniet aspernatur cum eaque alias blanditiis adipisci, reiciendis hic fugit aliquam animi laboriosam delectus maxime soluta eius voluptates, illo illum voluptatum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia officia architecto facilis ducimus autem repudiandae deserunt iusto laudantium sapiente asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequuntur, autem molestiae quaerat tempor consectetur at nobis incidunt ab iusto.</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <h4>Comments:</h4>
+                    <div class="comment1">
+                        <img src="./assets/comment-1.jpg" alt="profile photo" class="profilePicture">
+                        <div class="textBox">
+                            <p class="commentDateAuthor">Tuesday October 9th, 2018 by Jeremy</p>
+                            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic deleniti temporibus velit eaque minus, unde blanditiis rerum itaque, perferendis autem aspernatur enim eius. Inventore magnam illum laboriosam possimus excepturi!</p>
+                        </div>
+                    </div>
+                    <div class="comment2">
+                        <img src="./assets/comment-2.jpg" alt="profile photo" class="profilePicture">
+                        <div class="textBox">
+                            <p class="commentDateAuthor">Wednesday October 10th, 2018 by Julia</p>
+                            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic deleniti temporibus velit eaque
+                                minus, unde blanditiis rerum itaque, perferendis autem aspernatur enim eius. Inventore magnam illum laboriosam
+                                possimus excepturi!</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="POST" class="commentForm">
+                    <label for="name" class="sr-only">Please enter your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="email" class="sr-only">Please enter your email address:</label>
+                    <input type="email" id="email" name="email" placeholder="Email address">
+                    <label for="commentArea" class="sr-only">Please enter your comment:</label>
+                    <textarea name="commentArea" id="commentArea" cols="30" rows="10">Comment</textarea>
+                    <button type="submit" name="postComment" class="postComment">Post Comment</button>
+                </form>
+            </section>
+        </div>
+        </main>
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2018 HackerYou</p>
+        </div>
+    </footer>
+</body>
+</html>

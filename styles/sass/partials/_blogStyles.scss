@@ -1,0 +1,78 @@
+// Blog header styles
+
+.blogHeader {
+    height: 100vh;
+    margin-bottom: 50px;
+
+    .blogHeaderBG {
+        background-image: url("../assets/blog-header.jpg");
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 80vh;
+    }
+
+    .blogH2 {
+        width: 50%;
+        text-align: right;
+        margin-top: 89px;
+    }
+    .homeNav {
+        color: white;
+    }
+
+    .blogNav {
+        color: $robinEggBlue;
+    }
+}
+
+// Blog - Main styling
+
+.blogMain {
+    position: relative;
+
+    .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .blogSharkImage,
+    .blogFishImage {
+        position: absolute;
+        img {
+            display: block;
+        }
+    }
+
+    .blogFishImage {
+        right: 0;
+        top: -468px;
+        max-width: 63%;
+        box-shadow: -35px 35px 0px -3px $robinEggBlue;
+    }
+    .blogSharkImage {
+        left: 0;
+        top: -18px;
+        width: 30%;
+
+    }
+}
+
+.blogAbout {
+    flex-basis: 29%;
+    background-color: $spruce;
+    padding: 365px 50px 0 25px;
+}
+.blogPost {
+    flex-basis: 65%;
+    padding: 171px 0px 75px 10px;
+    margin: 0 auto;
+    .postText {
+        width: 100%;
+        border-bottom: 10px solid $robinEggBlue;
+        border-left: 10px solid $robinEggBlue;
+        padding: 50px 0 0 65px;
+    }
+}

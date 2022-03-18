@@ -685,3 +685,81 @@ footer p {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
 }
+
+.blogHeader {
+  height: 100vh;
+  margin-bottom: 50px;
+}
+.blogHeader .blogHeaderBG {
+  background-image: url("../assets/blog-header.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 80vh;
+}
+.blogHeader .blogH2 {
+  width: 50%;
+  text-align: right;
+  margin-top: 89px;
+}
+.blogHeader .homeNav {
+  color: white;
+}
+.blogHeader .blogNav {
+  color: #86E0F9;
+}
+
+.blogMain {
+  position: relative;
+}
+.blogMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMain .blogSharkImage,
+.blogMain .blogFishImage {
+  position: absolute;
+}
+.blogMain .blogSharkImage img,
+.blogMain .blogFishImage img {
+  display: block;
+}
+.blogMain .blogFishImage {
+  right: 0;
+  top: -468px;
+  max-width: 63%;
+  -webkit-box-shadow: -35px 35px 0px -3px #86E0F9;
+          box-shadow: -35px 35px 0px -3px #86E0F9;
+}
+.blogMain .blogSharkImage {
+  left: 0;
+  top: -18px;
+  width: 30%;
+}
+
+.blogAbout {
+  -ms-flex-preferred-size: 29%;
+      flex-basis: 29%;
+  background-color: #0F614E;
+  padding: 365px 50px 0 25px;
+}
+
+.blogPost {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  padding: 171px 0px 75px 10px;
+  margin: 0 auto;
+}
+.blogPost .postText {
+  width: 100%;
+  border-bottom: 10px solid #86E0F9;
+  border-left: 10px solid #86E0F9;
+  padding: 50px 0 0 65px;
+}
