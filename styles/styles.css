@@ -562,28 +562,18 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
-.news img {
-  max-width: 40%;
-}
-.news .imageHalf {
+.news .imageContainer {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
 }
 .news .leftImage {
-  position: absolute;
-  left: 0;
-  top: -40px;
+  box-shadow: 40px 39px 0px 0px #86E0F9;
   -webkit-box-shadow: 40px 39px 0px 0px #86E0F9;
-          box-shadow: 40px 39px 0px 0px #86E0F9;
 }
 .news .rightImage {
-  position: absolute;
-  right: 0px;
-  bottom: -40px;
+  box-shadow: -40px 39px 0px 0px #86E0F9;
   -webkit-box-shadow: -40px 39px 0px 0px #86E0F9;
-          box-shadow: -40px 39px 0px 0px #86E0F9;
 }
 .news .newAdditions {
   display: -webkit-box;
@@ -631,8 +621,9 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: end;
-      align-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: right;
 }
 .news .readMore {
@@ -1038,7 +1029,6 @@ footer p {
 .contactForm {
   background-color: #0F614E;
   padding: 50px;
-  z-index: 10;
   margin-top: -300px;
   box-shadow: -40px 40px 0px -6px #86E0F9;
   -webkit-box-shadow: -40px 40px 0px -6px #86E0F9;

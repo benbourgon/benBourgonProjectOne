@@ -27,7 +27,6 @@
 }
 
 // Contact - <main> styling
-
 .contactMain .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -83,22 +82,17 @@
 }
 
 // Contact - form section
-
 .contactForm {
     background-color: $spruce;
     padding: 50px;
-    z-index: 10;
     margin-top: -300px;
     box-shadow:  -40px 40px 0px -6px $robinEggBlue;
     -webkit-box-shadow:  -40px 40px 0px -6px $robinEggBlue;
-
     input,
     textarea {
         background-color: $spruce;
     }
-
     button {
         background-color: $darkBlueGrey;
     }
-
 }
