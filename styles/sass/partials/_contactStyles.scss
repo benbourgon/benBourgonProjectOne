@@ -11,18 +11,28 @@
         background-image: url("../assets/contact-header.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        nav {
+            flex-basis: 100%;
+            margin-bottom: 0;
+        }        
+        .contactH2 {
+            flex-basis: 100%;
+            text-align: center;
+            height: 350px;
+        }
+}
     .homeNav {
         color: white;
     }
     .contactNav {
         color: $robinEggBlue;
-    }
-
-    .contactH2 {
-        width: 70%;
-        text-align: right;
-        margin-top: 30px;
     }
 }
 
@@ -37,7 +47,7 @@
         flex-basis: 19%
     }
     .contactFormSection {
-        flex-basis: 69%;
+        flex-basis: 70%;
     }
 }
 

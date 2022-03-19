@@ -519,8 +519,8 @@ header h1 {
   height: 80%;
 }
 header .imageContainer {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   height: 80vh;
   margin-right: -83px;
 }
@@ -999,17 +999,34 @@ footer p {
   background-image: url("../assets/contact-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+.contactHeader .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactHeader .wrapper nav {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 0;
+}
+.contactHeader .wrapper .contactH2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  height: 350px;
 }
 .contactHeader .homeNav {
   color: white;
 }
 .contactHeader .contactNav {
   color: #86E0F9;
-}
-.contactHeader .contactH2 {
-  width: 70%;
-  text-align: right;
-  margin-top: 30px;
 }
 
 .contactMain .wrapper {
@@ -1028,8 +1045,8 @@ footer p {
       flex-basis: 19%;
 }
 .contactMain .wrapper .contactFormSection {
-  -ms-flex-preferred-size: 69%;
-      flex-basis: 69%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 
 .contactInfo {
