@@ -471,7 +471,8 @@ header .wrapper {
   height: 80vh;
 }
 header nav {
-  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,20 +802,30 @@ footer p {
 }
 
 .blogHeader {
-  height: 100vh;
-  margin-bottom: 50px;
+  height: 95vh;
+  margin-bottom: 0;
 }
 .blogHeader .blogHeaderBG {
   background-image: url("../assets/blog-header.jpg");
   height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  background-position: center;
 }
-.blogHeader .blogH2 {
-  width: 50%;
-  text-align: right;
-  margin-top: 89px;
+.blogHeader .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogHeader nav {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 75px;
 }
 .blogHeader .homeNav {
   color: white;
@@ -822,10 +833,25 @@ footer p {
 .blogHeader .blogNav {
   color: #86E0F9;
 }
-
-.blogMain {
-  position: relative;
+.blogHeader .headingContainer {
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
+  height: 261px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+.blogHeader .imageSpace {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
 .blogMain .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,34 +862,23 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blogMain .blogSharkImage,
-.blogMain .blogFishImage {
-  position: absolute;
-}
-.blogMain .blogSharkImage img,
-.blogMain .blogFishImage img {
-  display: block;
-}
-.blogMain .blogFishImage {
-  right: 0;
-  top: -468px;
-  max-width: 63%;
-  -webkit-box-shadow: -35px 35px 0px -3px #86E0F9;
-          box-shadow: -35px 35px 0px -3px #86E0F9;
-}
-.blogMain .blogSharkImage {
-  left: 0;
-  top: -18px;
-  width: 30%;
-}
 
 .blogAbout {
-  -ms-flex-preferred-size: 29%;
-      flex-basis: 29%;
-  padding: 365px 50px 0 25px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 0 15px 25px 25px;
   background-color: #0F614E;
-  display: inline-block;
-  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
 }
 .blogAbout a:hover,
 .blogAbout a:focus {
@@ -872,9 +887,19 @@ footer p {
   font-weight: bold;
   border-bottom: 2px solid #86E0F9;
 }
+.blogAbout .imageContainer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-left: -107px;
+  margin-bottom: 25px;
+  margin-top: -20px;
+}
 .blogAbout .blogAboutText,
 .blogAbout .blogRecentPosts {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   padding: 10px;
+  background-color: #0F614E;
 }
 .blogAbout ul {
   list-style: inside;
@@ -885,8 +910,20 @@ footer p {
 .blogPost {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
-  padding: 171px 0px 75px 10px;
-  margin: 0 auto;
+  padding: 0 0 75px 10px;
+  margin-top: -387px;
+}
+.blogPost .imageContainer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-right: -47px;
+  margin-bottom: 20px;
+}
+.blogPost .imageContainer .blogFishImage {
+  box-shadow: -35px 35px 0px 0px #86E0F9;
+  -webkit-box-shadow: -35px 35px 0px 0px #86E0F9;
+  position: relative;
+  left: 35px;
 }
 .blogPost h3 {
   text-align: left;
