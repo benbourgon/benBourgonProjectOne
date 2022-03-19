@@ -3,8 +3,8 @@
 // fontSize mixin pulled from Juno's bootcamp notes https://github.com/HackerYou/bootcamp-notes/blob/main/css/preprocessors-scss.md
 
 @mixin fontSize($sizeValue) {
-  font-size: $sizeValue * 1px;
-  font-size: ($sizeValue/10) * 1rem;
+  font-size: calc($sizeValue * 1px);
+  font-size: calc(($sizeValue / 10) * 1rem);
 }
 
 @mixin boxReset {

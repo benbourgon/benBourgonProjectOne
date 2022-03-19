@@ -28,9 +28,10 @@
 
 // Contact - <main> styling
 
-.contactMain {
+.contactMain .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 100px auto;
 
     .contactInfo {
@@ -39,4 +40,65 @@
     .contactFormSection {
         flex-basis: 69%;
     }
+}
+
+// Contact Info section - left column
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+
+    a:hover,
+    a:focus {
+        outline: none;
+        color: $robinEggBlue;
+    }    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .facebook {
+            padding-left: 0;
+        }
+    }
+    .contactEmailAddress {
+        @include fontSize(26);
+        padding: 25px 0;    
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+
+            h4 {
+                color: $robinEggBlue;
+                transition: 0.2s;
+            }
+        }
+    }
+    p {
+        margin: 5px 0;
+    }
+}
+
+// Contact - form section
+
+.contactForm {
+    background-color: $spruce;
+    padding: 50px;
+    z-index: 10;
+    margin-top: -300px;
+    box-shadow:  -40px 40px 0px -6px $robinEggBlue;
+    -webkit-box-shadow:  -40px 40px 0px -6px $robinEggBlue;
+
+    input,
+    textarea {
+        background-color: $spruce;
+    }
+
+    button {
+        background-color: $darkBlueGrey;
+    }
+
 }

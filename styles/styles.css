@@ -964,19 +964,89 @@ footer p {
   margin-top: 30px;
 }
 
-.contactMain {
+.contactMain .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 100px auto;
 }
-.contactMain .contactInfo {
+.contactMain .wrapper .contactInfo {
   -ms-flex-preferred-size: 19%;
       flex-basis: 19%;
 }
-.contactMain .contactFormSection {
+.contactMain .wrapper .contactFormSection {
   -ms-flex-preferred-size: 69%;
       flex-basis: 69%;
+}
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+.contactInfo a:hover,
+.contactInfo a:focus {
+  outline: none;
+  color: #86E0F9;
+}
+.contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactInfo ul .facebook {
+  padding-left: 0;
+}
+.contactInfo .contactEmailAddress {
+  font-size: 26px;
+  font-size: 2.6rem;
+  padding: 25px 0;
+}
+.contactInfo .contactEmailAddress:hover, .contactInfo .contactEmailAddress:focus {
+  text-decoration: underline;
+}
+.contactInfo .contactEmailAddress:hover h4, .contactInfo .contactEmailAddress:focus h4 {
+  color: #86E0F9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.contactInfo p {
+  margin: 5px 0;
+}
+
+.contactForm {
+  background-color: #0F614E;
+  padding: 50px;
+  z-index: 10;
+  margin-top: -300px;
+  box-shadow: -40px 40px 0px -6px #86E0F9;
+  -webkit-box-shadow: -40px 40px 0px -6px #86E0F9;
+}
+.contactForm input,
+.contactForm textarea {
+  background-color: #0F614E;
+}
+.contactForm button {
+  background-color: #0C1423;
 }

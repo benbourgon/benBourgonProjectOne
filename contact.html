@@ -31,44 +31,42 @@
         </div>
     </header>
     <main class="contactMain">
-        <section class="contactInfo" id="contactInfo">
-            <div class="wrapper">
-                <div class="socialIcons">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="mailto:info@email.com"><h4>info@email.com</h4></a>
-                <p>123-456-7890</p>
-                <p>123 Queen St West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div>
-        </section>
-        <section class="contactFormSection" id="contactFormSection">
-            <div class="wrapper">
-                <form action="POST" class="contactForm">
-                        <label for="name" class="sr-only">Please enter your name:</label>
-                        <input type="text" id="name" name="name" class="name" placeholder="Name" required>
-                        <label for="email" class="sr-only">Please enter your email address:</label>
-                        <input type="email" id="email" name="email" class="email" placeholder="Email address" required>
-                        <label for="messageArea" class="sr-only">Please enter your message:</label>
-                        <textarea name="messageArea" id="messageArea" class="cols=" 30" rows="5" placeholder="Message" required></textarea>
-                        <button type="submit" name="submitButton" class="submitButton"> Submit</button>
-                </form>
-            </div>
-        </section>
+        <div class="wrapper">
+            <section class="contactInfo" id="contactInfo">
+                    <div class="socialIcons">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="mailto:info@email.com" class="contactEmailAddress"><h4>info@email.com</h4></a>
+                    <p>123-456-7890</p>
+                    <p>123 Queen St West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+            </section>
+            <section class="contactFormSection" id="contactFormSection">
+                    <form action="POST" class="contactForm">
+                            <label for="name" class="sr-only">Please enter your name:</label>
+                            <input type="text" id="name" name="name" class="name" placeholder="Name" required>
+                            <label for="email" class="sr-only">Please enter your email address:</label>
+                            <input type="email" id="email" name="email" class="email" placeholder="Email address" required>
+                            <label for="messageArea" class="sr-only">Please enter your message:</label>
+                            <textarea name="messageArea" id="messageArea" class="cols=" 30" rows="5" placeholder="Message" required></textarea>
+                            <button type="submit" name="submitButton" class="submitButton"> Submit</button>
+                    </form>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="wrapper">
