@@ -2,6 +2,7 @@
 
 body {
     background-color: $darkBlueGrey;
+    overflow-x: hidden;
 
     ul {
         @include boxReset;

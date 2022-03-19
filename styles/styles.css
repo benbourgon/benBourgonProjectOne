@@ -318,6 +318,7 @@ textarea {
 
 body {
   background-color: #0C1423;
+  overflow-x: hidden;
 }
 body ul {
   margin: 0;
@@ -462,20 +463,22 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 80vh;
 }
 header nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 105px;
+  margin-bottom: 75px;
 }
 header nav .hamburger {
   position: absolute;
@@ -505,17 +508,26 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 33.3333333333%;
-  height: 100%;
-  justify-self: center;
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+  height: 80%;
+}
+header .imageContainer {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  height: 80vh;
+  margin-right: -83px;
 }
 header .goldfish {
   position: absolute;
   width: 50%;
   right: 0;
-  top: 175px;
+  top: 172px;
 }
 
 footer {
@@ -546,8 +558,8 @@ footer p {
 }
 
 .news {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 75px;
   background-color: #0F614E;
   display: -webkit-box;
@@ -564,8 +576,16 @@ footer p {
           justify-content: space-between;
 }
 .news .imageContainer {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+.news .imageContainer.leftImageContainer {
+  margin-left: -83px;
+  margin-top: -64px;
+}
+.news .imageContainer.rightImageContainer {
+  margin-right: -83px;
+  margin-bottom: -64px;
 }
 .news .leftImage {
   box-shadow: 40px 39px 0px 0px #86E0F9;
@@ -593,11 +613,11 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: start;
-      align-content: start;
+      align-content: flex-start;
 }
 .news .realNemo {
   display: -webkit-box;
@@ -618,9 +638,9 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
