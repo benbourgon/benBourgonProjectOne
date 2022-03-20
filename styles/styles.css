@@ -456,6 +456,7 @@ header .headerBG {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/header-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   height: 80vh;
 }
@@ -759,6 +760,12 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 75px;
 }
 .profile .wrapper h3 {
@@ -767,9 +774,9 @@ footer p {
 .profile .wrapper .smallBoxImage {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
-  max-height: 304px;
   -webkit-box-shadow: 40px 39px 0px 0px #86E0F9;
           box-shadow: 40px 39px 0px 0px #86E0F9;
+  margin-top: -30px;
 }
 .profile .wrapper .textContainer {
   -ms-flex-preferred-size: 75%;
@@ -1113,4 +1120,86 @@ footer p {
 }
 .contactForm button {
   background-color: #0C1423;
+}
+
+@media (max-width: 1241px) {
+  .about {
+    padding: 0 75px 150px 75px;
+  }
+
+  .news .realNemo .imageContainer {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media (max-width: 1185px) {
+  header {
+    height: auto;
+    margin-bottom: 225px;
+  }
+  header .headerBG {
+    height: 40vh;
+  }
+  header nav {
+    margin-bottom: 30px;
+  }
+  header nav ul {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+
+  .news {
+    margin-bottom: 50px;
+  }
+  .news .realNemo {
+    padding-top: 75px;
+  }
+  .news .imageContainer.leftImageContainer {
+    margin-left: -83px;
+    margin-top: -64px;
+  }
+  .news .imageContainer.rightImageContainer {
+    margin-right: -83px;
+    margin-bottom: -64px;
+  }
+
+  .profile h3,
+.about h3 {
+    font-size: 34px;
+    font-size: 3.4rem;
+  }
+
+  .profile .wrapper .textContainer {
+    margin-left: 75px;
+  }
+}
+@media (max-width: 1010px) {
+  header {
+    height: auto;
+  }
+  header .wrapper {
+    height: auto;
+  }
+  header .headerBG {
+    height: 60vh;
+  }
+  header h1 {
+    font-size: 10.35rem;
+    line-height: 9.45rem;
+    height: 60vh;
+  }
+  header nav {
+    margin-bottom: 0px;
+  }
+  header nav ul {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .news {
+    padding-bottom: 0;
+  }
+  .news .realNemo {
+    padding-top: 25px;
+  }
 }

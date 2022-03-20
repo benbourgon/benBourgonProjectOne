@@ -179,6 +179,8 @@
     }
     .wrapper {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 75px;
 
         h3 {
@@ -187,8 +189,8 @@
 
         .smallBoxImage {
             flex-basis: 15%;
-            max-height: 304px;
             box-shadow: 40px 39px 0px 0px $robinEggBlue;
+            margin-top: -30px;
         }
 
         .textContainer {
