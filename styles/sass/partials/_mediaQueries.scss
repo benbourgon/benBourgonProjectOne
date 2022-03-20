@@ -1,33 +1,36 @@
 // Media queries - Desktop-first
 
 
+
+// Very large monitors to large monitors
+@media (max-width: 1850px) {
+    header {
+        max-height: 900px;
+        .headerBG {
+            max-height: 640px;
+    
+            .wrapper {
+                max-height: 640px;
+            }
+        }
+    }
+    
+}
+
+// Large monitors to laptops
 @media (max-width: 1241px) {
+    // Home page styling
 
     // Home - about section
     .about {
-        padding: 0 75px 150px 75px;
+        padding: 25px 75px 150px 75px;
     }
-    // Home news section
-    .news .realNemo .imageContainer {
-        flex-basis: 50%;
-    }
-}
-
-
-// Large tablet to small desktop computer size
-@media (max-width: 1185px) {
-    // Home page styling
 
     // Home header
     header {
-        height: auto;
-        margin-bottom: 225px;
-        .headerBG {
-            height: 40vh;
-        }
+        margin-bottom: 75px;
+
         nav {
-            margin-bottom: 30px;
-            
             ul {
                 flex-basis: 50%;
             }
@@ -42,6 +45,7 @@
             padding-top: 75px;
         }
         .imageContainer {
+            flex-basis: 50%;
             &.leftImageContainer {
                 margin-left: -83px;
                 margin-top: -64px;
@@ -53,42 +57,27 @@
             }
         }
     }
-
-    // Home - Links section
-    .links {
-
-    }
-
-    // Home - Profile section
-    .profile h3,
-    .about h3 {
-        @include fontSize(34);
-    }
-    .profile .wrapper{
-
-        .textContainer {
-            margin-left: 75px;
-        }
-    }
     
 }
 
-@media (max-width: 1010px) {
+// Large tablet to small desktop computer size
+@media (max-width: 1186px) {
     header {
-        height: auto;
-
+        max-height: 700px;
+        margin-bottom: 75px;
+        .headerBG {
+            height: 70vh;
+            max-height: 560px;
+        }
         .wrapper {
+            align-items: flex-start;
             height: auto;
         }
-
-        .headerBG {
-            height: 60vh;
-        }
-        
         h1 {
             font-size: calc($headerSize * 0.75);
             line-height: calc($headerHeight * 0.75);
-            height: 60vh;
+            height: auto;
+            margin-top: 100px;
         }
         
         nav {
@@ -98,9 +87,16 @@
                 flex-basis: 100%
             }
         }
-        
     }
-
+    .profile h3,
+    .about h3 {
+        @include fontSize(34);
+    }
+    .profile .wrapper {
+        .textContainer {
+            margin-left: 75px;
+        }
+    }
     .news {
         padding-bottom: 0;
 
@@ -111,11 +107,90 @@
     
 }
 
-// Landscape phone to tablet
-@media (max-width: 777px) {
+@media (max-width: 991px) {
+        header {
+            height: auto;
+            max-height: 650px;
+            padding-bottom: 50px;
 
+            nav ul {
+                position: static;
+            }
+
+            .headerBG {
+                height: auto;
+
+                .wrapper {
+                    height: auto;
+                }
+            }
+            h1 {
+                margin-bottom: 25px;
+                margin-top: 75px;
+            }
+            .goldfish {
+                top: 120px;
+            }
+        }
+}
+
+// Landscape phone to tablet
+@media (max-width: 790px) {
+
+    header {
+        h1 {
+            margin-top: 105px;
+            font-size: calc($headerSize * 0.5);
+            line-height: calc($headerHeight * 0.5);
+        }
+        nav {
+            transition: 0.1s;
+            ul {
+                position: absolute;
+                left: -5000px;
+            }
+            .hamburger {
+                left: 85%;
+                top: 20px;
+            }
+        }
+    }
+
+    .about {
+        padding: 25px 10px 150px 10px;
+    }
 }
 // Landscape phone and below 
-@media (max-width: 480px) {
+@media (max-width: 493px) {
 
+    .wrapper {
+        width: 95%;
+    }
+
+    header {
+        margin-bottom: 25px;
+
+        h1 {
+            margin: 115px 5px 50px 5px;
+            @include fontSize (39);
+            line-height: 3.9rem;
+        }
+        nav .hamburger {
+            @include fontSize (28);
+            top: 7px;
+            left: 80%;
+        }
+        .goldfish {
+            width: 55%;
+        }   
+    }
+}
+
+// Small phones
+@media (max-width: 359px) {
+    header {
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
 }

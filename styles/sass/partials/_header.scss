@@ -1,5 +1,6 @@
 header {
     height: 100vh;
+    max-height: 1200px;
     margin-bottom: 75px;
 
     .headerBG {
@@ -9,24 +10,32 @@ header {
         background-position: center;
         position: relative;
         height: 80vh;
+        max-height: 900px;
     }
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         height: 80vh;
-        
-    
+        max-height: 900px;
     }
     nav {
         flex-basis: 100%;
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 75px;
+        max-height: 75px;
 
         .hamburger {
             position: absolute;
             left: -5000px;
+            @include fontSize (34);
+
+            &:hover,
+            &:focus,
+            &:active {
+                outline: 2px solid $robinEggBlue;
+                color: $robinEggBlue;
+            }
         }
         ul {
                 display: flex;
@@ -48,16 +57,14 @@ header {
         flex-basis: calc(100% / 3);
         height: 80%;
     }
-    .imageContainer {
-        flex-basis: 65%;
-        height: 80vh;
-        margin-right: -83px;
-    }
 
     .goldfish {
-        position: absolute;
         width: 50%;
+        position: absolute;
         right: 0;
-        top: 172px;
+        top: 155px;
     }
+
+    
+
 }
