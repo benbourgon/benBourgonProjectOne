@@ -1217,11 +1217,6 @@ footer p {
   .profile .wrapper .textContainer {
     margin-left: 75px;
   }
-  .profile .leftImage.smallBoxContainer {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
 
   .news {
     padding-bottom: 0;
@@ -1314,6 +1309,14 @@ footer p {
   .profile .sharkBanner {
     max-height: 300px;
   }
+  .profile .wrapper .imageContainer {
+    -ms-flex-preferred-size: 39%;
+        flex-basis: 39%;
+  }
+  .profile .wrapper .textContainer {
+    -ms-flex-preferred-size: 59%;
+        flex-basis: 59%;
+  }
 }
 @media (max-width: 790px) {
   header h1 {
@@ -1357,9 +1360,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 50px 0;
   }
   .profile .wrapper .imageContainer,
@@ -1372,6 +1375,28 @@ footer p {
   }
   .profile .wrapper .textContainer {
     margin-left: 0;
+  }
+  .profile .wrapper .smallBoxImage {
+    -webkit-box-shadow: 30px 30px 0px 0px #86E0F9;
+    box-shadow: 30px 30px 0px 0px #86E0F9;
+  }
+
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery ul li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  .gallery ul li:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 493px) {
@@ -1432,5 +1457,11 @@ footer p {
     font-size: 20px;
     font-size: 2rem;
     margin-bottom: 0px;
+  }
+
+  .profile .wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
