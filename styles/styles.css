@@ -753,11 +753,10 @@ footer p {
 }
 .profile .sharkBanner {
   background-image: url(../assets/banner.jpg);
-  height: 55vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   margin-bottom: 100px;
-  max-height: 300px;
 }
 .profile .wrapper {
   display: -webkit-box;
@@ -769,21 +768,23 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 75px;
+  padding: 75px 0;
 }
 .profile .wrapper h3 {
   text-align: left;
 }
-.profile .wrapper .smallBoxImage {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
-  -webkit-box-shadow: 40px 39px 0px 0px #86E0F9;
-          box-shadow: 40px 39px 0px 0px #86E0F9;
+.profile .wrapper .imageContainer {
+  -ms-flex-preferred-size: 29%;
+      flex-basis: 29%;
   margin-top: -30px;
 }
+.profile .wrapper .smallBoxImage {
+  -webkit-box-shadow: 40px 39px 0px 0px #86E0F9;
+          box-shadow: 40px 39px 0px 0px #86E0F9;
+}
 .profile .wrapper .textContainer {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  -ms-flex-preferred-size: 69%;
+      flex-basis: 69%;
   text-align: left;
   margin-left: 100px;
 }
@@ -1135,6 +1136,10 @@ footer p {
   header .headerBG .wrapper {
     max-height: 640px;
   }
+
+  .profile .sharkBanner {
+    height: 40vh;
+  }
 }
 @media (max-width: 1241px) {
   .about {
@@ -1203,8 +1208,19 @@ footer p {
     font-size: 3.4rem;
   }
 
+  .profile .sharkBanner {
+    height: 30vh;
+  }
+  .profile .wrapper {
+    padding: 75px 0;
+  }
   .profile .wrapper .textContainer {
     margin-left: 75px;
+  }
+  .profile .leftImage.smallBoxContainer {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .news {
@@ -1294,6 +1310,10 @@ footer p {
   .links .wrapper .contentBox {
     padding: 0 10px;
   }
+
+  .profile .sharkBanner {
+    max-height: 300px;
+  }
 }
 @media (max-width: 790px) {
   header h1 {
@@ -1327,6 +1347,31 @@ footer p {
 
   .about {
     padding: 25px 10px 150px 10px;
+  }
+
+  .profile .sharkBanner {
+    max-height: 200px;
+  }
+  .profile .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 50px 0;
+  }
+  .profile .wrapper .imageContainer,
+.profile .wrapper .textContainer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .profile .wrapper .imageContainer {
+    margin-bottom: 75px;
+  }
+  .profile .wrapper .textContainer {
+    margin-left: 0;
   }
 }
 @media (max-width: 493px) {
