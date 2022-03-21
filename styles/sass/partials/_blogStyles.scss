@@ -1,8 +1,9 @@
 // Blog header styles
 
 .blogHeader {
-    height: 95vh;
-    margin-bottom: 0;
+    height: 100vh;
+    margin-bottom: 100px;
+    max-height: 850px;
 
     .blogHeaderBG {
         background-image: url("../assets/blog-header.jpg");
@@ -10,11 +11,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        max-height: 800px;
+        
     }
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        max-height: 800px;
     }
     nav {
         flex-basis: 100%;

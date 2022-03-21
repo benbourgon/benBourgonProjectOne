@@ -813,8 +813,9 @@ footer p {
 }
 
 .blogHeader {
-  height: 95vh;
-  margin-bottom: 0;
+  height: 100vh;
+  margin-bottom: 100px;
+  max-height: 850px;
 }
 .blogHeader .blogHeaderBG {
   background-image: url("../assets/blog-header.jpg");
@@ -822,6 +823,7 @@ footer p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-height: 800px;
 }
 .blogHeader .wrapper {
   display: -webkit-box;
@@ -832,6 +834,7 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-height: 800px;
 }
 .blogHeader nav {
   -ms-flex-preferred-size: 100%;
