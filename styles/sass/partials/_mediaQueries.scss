@@ -2,7 +2,7 @@
 
 
 
-// Very large monitors to large monitors
+// Very large monitor range
 @media (max-width: 1850px) {
     header {
         max-height: 900px;
@@ -106,7 +106,7 @@
     }
     
 }
-
+// Landscape tablet
 @media (max-width: 991px) {
         header {
             height: auto;
@@ -132,6 +132,40 @@
                 top: 120px;
             }
         }
+
+        .news {
+            .newAdditions {
+                flex-direction: column;
+
+                .leftImageContainer {
+                    flex-basis: 100%;
+                    margin-bottom: 75px;
+                    margin-left: -43px;
+                }
+
+                .leftImage {
+                    box-shadow: 42px 39px 0px 0px $robinEggBlue;
+                    -webkit-box-shadow: 42px 39px 0px 0px $robinEggBlue;
+                }
+            }
+            .realNemo {
+                flex-direction: column-reverse;
+                margin-top: 50px;
+                align-items: flex-end;
+                padding: 0;
+
+                .rightImageContainer {
+                    flex-basis: 100%;
+                    margin-bottom: 75px;
+                    margin-right: -45px;
+
+                    .rightImage {
+                        box-shadow: -46px 39px 0px 0px $robinEggBlue;
+                        -webkit-box-shadow: -46px 39px 0px 0px $robinEggBlue;
+                    }
+                }
+            }
+        }
 }
 
 // Landscape phone to tablet
@@ -143,6 +177,7 @@
             font-size: calc($headerSize * 0.5);
             line-height: calc($headerHeight * 0.5);
         }
+
         nav {
             transition: 0.1s;
             ul {
@@ -155,12 +190,15 @@
             }
         }
     }
-
+    
+    h4 {
+        @include fontSize(26);
+    }
     .about {
         padding: 25px 10px 150px 10px;
     }
 }
-// Landscape phone and below 
+// Landscape phones to portrait modern phones
 @media (max-width: 493px) {
 
     .wrapper {
@@ -184,13 +222,30 @@
             width: 55%;
         }   
     }
+
+    .profile h3,
+    .about h3 {
+        @include fontSize(28);
+    }
 }
 
-// Small phones
-@media (max-width: 359px) {
+
+
+// Small phones and below
+@media (max-width: 406px) {
+    body p {
+        font-size: calc($bodyFontSize * 0.8);
+        line-height: calc($bodyLineHeight * 0.8);
+    }
     header {
         h1 {
             margin-bottom: 10px;
         }
+    }
+
+    .profile h3,
+    .about h3 {
+        @include fontSize(20);
+        margin-bottom: 0px;
     }
 }

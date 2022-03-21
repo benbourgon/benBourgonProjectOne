@@ -490,9 +490,10 @@ header nav .hamburger {
   left: -5000px;
   font-size: 34px;
   font-size: 3.4rem;
+  padding: 5px 10px;
 }
 header nav .hamburger:hover, header nav .hamburger:focus, header nav .hamburger:active {
-  outline: 2px solid #86E0F9;
+  outline: 4px solid #86E0F9;
   color: #86E0F9;
 }
 header nav ul {
@@ -754,10 +755,11 @@ footer p {
 }
 .profile .sharkBanner {
   background-image: url(../assets/banner.jpg);
-  min-height: 55vh;
+  height: 55vh;
   background-size: cover;
   background-position: center;
   margin-bottom: 100px;
+  max-height: 300px;
 }
 .profile .wrapper {
   display: -webkit-box;
@@ -1236,6 +1238,44 @@ footer p {
   header .goldfish {
     top: 120px;
   }
+
+  .news .newAdditions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news .newAdditions .leftImageContainer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 75px;
+    margin-left: -43px;
+  }
+  .news .newAdditions .leftImage {
+    box-shadow: 42px 39px 0px 0px #86E0F9;
+    -webkit-box-shadow: 42px 39px 0px 0px #86E0F9;
+  }
+  .news .realNemo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 50px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+  }
+  .news .realNemo .rightImageContainer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 75px;
+    margin-right: -45px;
+  }
+  .news .realNemo .rightImageContainer .rightImage {
+    box-shadow: -46px 39px 0px 0px #86E0F9;
+    -webkit-box-shadow: -46px 39px 0px 0px #86E0F9;
+  }
 }
 @media (max-width: 790px) {
   header h1 {
@@ -1254,6 +1294,11 @@ footer p {
   header nav .hamburger {
     left: 85%;
     top: 20px;
+  }
+
+  h4 {
+    font-size: 26px;
+    font-size: 2.6rem;
   }
 
   .about {
@@ -1283,9 +1328,27 @@ footer p {
   header .goldfish {
     width: 55%;
   }
+
+  .profile h3,
+.about h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
 }
-@media (max-width: 359px) {
+@media (max-width: 406px) {
+  body p {
+    font-size: 1.6rem;
+    line-height: 2.56rem;
+  }
+
   header h1 {
     margin-bottom: 10px;
+  }
+
+  .profile h3,
+.about h3 {
+    font-size: 20px;
+    font-size: 2rem;
+    margin-bottom: 0px;
   }
 }

@@ -172,10 +172,11 @@
     padding: 75px 0;
     .sharkBanner {
         background-image: url(../assets/banner.jpg);
-        min-height: 55vh;
+        height: 55vh;
         background-size: cover;
         background-position: center;
         margin-bottom: 100px;
+        max-height: 300px;
     }
     .wrapper {
         display: flex;
