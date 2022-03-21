@@ -166,6 +166,27 @@
                 }
             }
         }
+
+        .links {
+            padding: 25px 0;
+            .wrapper {
+                flex-direction: column;
+
+                .locationsLink,
+                .communityLink,
+                .blogLink,
+                .getInTouchLink {
+                    flex-basis: 100%;
+
+                }
+
+            .contentBox {
+                padding: 0 10px;
+            }
+
+
+            }
+        }
 }
 
 // Landscape phone to tablet
@@ -191,7 +212,13 @@
         }
     }
     
-    h4 {
+    h4,
+    .links h4 a,
+    .links h4 a:first-child,
+    .locationsLink a,
+    .communityLink a,
+    .blogLink a,
+    .getInTouchLink a{
         @include fontSize(26);
     }
     .about {
@@ -226,6 +253,20 @@
     .profile h3,
     .about h3 {
         @include fontSize(28);
+    }
+    .links {
+        .locationsLink a {
+            left: -26%
+        }
+        .communityLink a {
+            left: -26%;
+        }
+        .blogLink a {
+            left: -11%
+        }
+        .getInTouchLink a {
+            left: -19%
+        }
     }
 }
 

@@ -89,7 +89,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: stretch;
     }
 
     .locationsLink,
@@ -106,6 +105,7 @@
             flex-basis: 89%;
             margin-left: 10px;
             margin-top: 6px;
+            padding: 0 5px;
         }
     }
 

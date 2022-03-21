@@ -671,9 +671,6 @@ footer p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
 }
 .links .locationsLink,
 .links .communityLink,
@@ -699,6 +696,7 @@ footer p {
       flex-basis: 89%;
   margin-left: 10px;
   margin-top: 6px;
+  padding: 0 5px;
 }
 .links h4 a {
   text-align: left;
@@ -1276,6 +1274,26 @@ footer p {
     box-shadow: -46px 39px 0px 0px #86E0F9;
     -webkit-box-shadow: -46px 39px 0px 0px #86E0F9;
   }
+
+  .links {
+    padding: 25px 0;
+  }
+  .links .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links .wrapper .locationsLink,
+.links .wrapper .communityLink,
+.links .wrapper .blogLink,
+.links .wrapper .getInTouchLink {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .links .wrapper .contentBox {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 790px) {
   header h1 {
@@ -1296,7 +1314,13 @@ footer p {
     top: 20px;
   }
 
-  h4 {
+  h4,
+.links h4 a,
+.links h4 a:first-child,
+.locationsLink a,
+.communityLink a,
+.blogLink a,
+.getInTouchLink a {
     font-size: 26px;
     font-size: 2.6rem;
   }
@@ -1333,6 +1357,19 @@ footer p {
 .about h3 {
     font-size: 28px;
     font-size: 2.8rem;
+  }
+
+  .links .locationsLink a {
+    left: -26%;
+  }
+  .links .communityLink a {
+    left: -26%;
+  }
+  .links .blogLink a {
+    left: -11%;
+  }
+  .links .getInTouchLink a {
+    left: -19%;
   }
 }
 @media (max-width: 406px) {
