@@ -1,31 +1,40 @@
-.contactBody {
-    height: 100vh;
-}
 
 // Contact - <header> styling
+
 .contactHeader {
-    height: 65vh;
+    height: 55vh;
 
     .contactHeaderBG {
-        height: 65vh;
         background-image: url("../assets/contact-header.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        height: 50vh;
     }
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        height: 100%;
         
         nav {
             flex-basis: 100%;
             margin-bottom: 0;
         }        
-        .contactH2 {
+        .headingContainer {
             flex-basis: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 275px;
+            
+        }
+        h2 {
+            flex-basis: 100%;
+            height: 100%;
             text-align: center;
-            height: 350px;
         }
 }
     .homeNav {
@@ -41,7 +50,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 100px auto;
+    align-content: center;
+    height: 45vh;
+    margin-top: -275px;
 
     .contactInfo {
         flex-basis: 19%
@@ -58,6 +69,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     text-align: left;
+    margin-top: -150px;
 
     a:hover,
     a:focus {
@@ -95,7 +107,7 @@
 .contactForm {
     background-color: $spruce;
     padding: 50px;
-    margin-top: -300px;
+    margin-top: -150px;
     box-shadow:  -40px 40px 0px -6px $robinEggBlue;
     -webkit-box-shadow:  -40px 40px 0px -6px $robinEggBlue;
     input,
@@ -105,4 +117,8 @@
     button {
         background-color: $darkBlueGrey;
     }
+}
+
+.contactBody footer {
+    margin-top: 200px;
 }

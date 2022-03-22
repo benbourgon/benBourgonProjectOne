@@ -1006,19 +1006,15 @@ footer p {
   background-color: #0F614E;
 }
 
-.contactBody {
-  height: 100vh;
-}
-
 .contactHeader {
-  height: 65vh;
+  height: 55vh;
 }
 .contactHeader .contactHeaderBG {
-  height: 65vh;
   background-image: url("../assets/contact-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 50vh;
 }
 .contactHeader .wrapper {
   display: -webkit-box;
@@ -1029,17 +1025,35 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 .contactHeader .wrapper nav {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 0;
 }
-.contactHeader .wrapper .contactH2 {
+.contactHeader .wrapper .headingContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 275px;
+}
+.contactHeader .wrapper h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
   text-align: center;
-  height: 350px;
 }
 .contactHeader .homeNav {
   color: white;
@@ -1057,7 +1071,10 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 100px auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 45vh;
+  margin-top: -275px;
 }
 .contactMain .wrapper .contactInfo {
   -ms-flex-preferred-size: 19%;
@@ -1083,6 +1100,7 @@ footer p {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: left;
+  margin-top: -150px;
 }
 .contactInfo a:hover,
 .contactInfo a:focus {
@@ -1122,7 +1140,7 @@ footer p {
 .contactForm {
   background-color: #0F614E;
   padding: 50px;
-  margin-top: -300px;
+  margin-top: -150px;
   box-shadow: -40px 40px 0px -6px #86E0F9;
   -webkit-box-shadow: -40px 40px 0px -6px #86E0F9;
 }
@@ -1132,6 +1150,10 @@ footer p {
 }
 .contactForm button {
   background-color: #0C1423;
+}
+
+.contactBody footer {
+  margin-top: 200px;
 }
 
 @media (max-width: 1850px) {
