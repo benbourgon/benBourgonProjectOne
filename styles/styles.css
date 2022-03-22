@@ -1153,10 +1153,10 @@ footer p {
 }
 
 .contactBody footer {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 1920px) {
   header {
     max-height: 900px;
   }
@@ -1169,6 +1169,37 @@ footer p {
 
   .profile .sharkBanner {
     height: 40vh;
+  }
+
+  .contactHeader {
+    max-height: 570px;
+  }
+  .contactHeader .contactHeaderBG {
+    height: 100%;
+  }
+  .contactHeader .wrapper {
+    height: 100%;
+    max-height: 100%;
+  }
+  .contactHeader .wrapper .headingContainer {
+    margin-top: 200px;
+  }
+
+  .contactMain .wrapper {
+    margin-top: -175px;
+  }
+}
+@media (max-width: 1440px) {
+  .contactHeader {
+    max-height: 400px;
+  }
+  .contactHeader .wrapper .headingContainer {
+    margin-top: 100px;
+  }
+
+  .contactMain .wrapper {
+    margin-top: -50px;
+    height: auto;
   }
 }
 @media (max-width: 1241px) {
@@ -1285,6 +1316,27 @@ footer p {
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 2.56rem;
+  }
+
+  .contactMain .wrapper .contactFormSection {
+    -ms-flex-preferred-size: 64%;
+        flex-basis: 64%;
+  }
+  .contactMain .contactInfo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contactFormSection form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFormSection form input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -1451,6 +1503,14 @@ footer p {
   .blogMain .blogPost .imageContainer {
     max-width: 95%;
   }
+
+  .contactMain h4 {
+    font-size: 2.56rem;
+  }
+  .contactMain p {
+    font-size: 1.6rem;
+    line-height: 2.56rem;
+  }
 }
 @media (max-width: 790px) {
   header h1 {
@@ -1582,6 +1642,54 @@ footer p {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+
+  .contactHeader {
+    max-height: auto;
+    height: auto;
+  }
+  .contactHeader .contactHeaderBG {
+    height: auto;
+  }
+  .contactHeader .wrapper .headingContainer {
+    margin: 100px auto;
+  }
+  .contactHeader h2 {
+    font-size: 6.4rem;
+    line-height: 7.36rem;
+  }
+
+  .contactMain .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contactMain .wrapper .contactFormSection {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contactMain .wrapper .contactInfo {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+    -ms-flex-preferred-size: 99%;
+        flex-basis: 99%;
+  }
+
+  .contactFormSection form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .contactBody footer {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 493px) {
   .wrapper {
@@ -1646,6 +1754,10 @@ footer p {
   .blogMain .blogAbout .imageContainer {
     padding-top: 0;
   }
+
+  .contactMain .wrapper .contactFormSection {
+    margin: 50px auto;
+  }
 }
 @media (max-width: 406px) {
   body p {
@@ -1668,5 +1780,14 @@ footer p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .contactFormSection .contactForm {
+    padding: 10px;
+  }
+  .contactFormSection .contactForm input,
+.contactFormSection .contactForm textarea {
+    -ms-flex-preferred-size: 99%;
+        flex-basis: 99%;
   }
 }
