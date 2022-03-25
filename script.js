@@ -11,13 +11,28 @@
 // Create a variable that changes based on whether the menu is open or closed.
 let hamburgerOpen = false;
 
-// Store the page elements in javascript variables
+// Store the button and navigation elements as javascript variables
 const hamburgerButton = document.querySelector('.hamburger');
+const hamburgerIcon = document.querySelector('.hamburger i')
 const navigationList = document.querySelector('.navMenu')
 const navigationListItem = document.querySelectorAll('.navMenu li')
 
-// Create an event listener method for the hamburger menu button, when it is clicked.
-hamburgerButton.addEventListener('click', function(event){
+function hamburgerClick() {
     // When the hamburger button is clicked
-    // If the hamburger menu is open
-});
+    // If the hamburger menu is open, close it
+    if(hamburgerOpen){
+        hamburgerIcon.classList.remove('fa-xmark');
+        hamburgerIcon.classList.add('fa-bars');
+        console.log(hamburgerIcon.classList);
+        hamburgerOpen = false
+    // If it's closed, open it.
+    } else{
+        hamburgerIcon.classList.add('fa-xmark');
+        hamburgerIcon.classList.remove('fa-bars');
+        console.log(hamburgerIcon.classList);
+        hamburgerOpen = true;
+    }
+}
+
+// Create an event listener method for the hamburger menu button click.
+hamburgerButton.addEventListener('click', hamburgerClick);
