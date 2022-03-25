@@ -26,10 +26,11 @@ header {
         max-height: 75px;
 
         .hamburger {
-            position: absolute;
+            position: fixed;
             left: -5000px;
             @include fontSize (34);
             padding: 5px 10px;
+            z-index: 30;
 
             &:hover,
             &:focus,

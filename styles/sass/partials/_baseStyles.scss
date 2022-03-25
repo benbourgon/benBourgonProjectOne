@@ -63,6 +63,12 @@ body {
         &:hover {
             outline: 4px solid white;
         }
-    }
-
-}  
+    };
+    .navOpen {
+        flex-direction: column;
+        align-items: center;
+        background: $darkBlueGrey;
+        opacity: 0.5;
+        position: sticky;
+    };
+}
