@@ -23,8 +23,12 @@ function openHamburgerNav(){
     hamburgerIcon.classList.remove('fa-bars');
     // add the navOpen class to the nav menu list
     navigationList.classList.add('navOpen');
+
     // The menu is now open
     hamburgerOpen = true;
+    // Add inline style to keep the "x" icon in the top right regardless of change in viewport size.
+    hamburgerButton.style.left = "85%";
+    hamburgerButton.style.top = "20px";
 }
 function closeHamburgerNav(){
     // change the hamburger icon to the "x" icon.
@@ -32,8 +36,13 @@ function closeHamburgerNav(){
     hamburgerIcon.classList.add('fa-bars');
     // add the navOpen class to the nav menu list
     navigationList.classList.remove('navOpen');
+
     // The menu is now closed
     hamburgerOpen = false
+    // remove the inline styling to allow the hamburger icon to be positioned offscreen.
+    hamburgerButton.style.transition = "0s";
+    hamburgerButton.style.left = "";
+    hamburgerButton.style.top = "";
 }
 
 function hamburgerClick() {
