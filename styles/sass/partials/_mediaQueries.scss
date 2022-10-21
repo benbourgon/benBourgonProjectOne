@@ -2,14 +2,11 @@
 
 // Very large monitor range
 @media (max-width: 1920px) {
-    header {
-        max-height: 900px;
+header {
+        min-height: 900px;
+
         .headerBG {
-            max-height: 640px;
-    
-            .wrapper {
-                max-height: 640px;
-            }
+            min-height: 640px;
         }
     }
     // Home - profile section
@@ -19,23 +16,11 @@
 
     // Contact page
     .contactHeader {
-        max-height: 570px;
-        
-        .contactHeaderBG {
-            height: 100%;
-        }
-        .wrapper {
-            height: 100%;
-            max-height: 100%;
-            
-            .headingContainer {
-                margin-top: 200px;
-            }
-        }
-        
+        margin-bottom: 0;
     }
+        
     .contactMain .wrapper {
-        margin-top: -175px;
+        margin-top: -200px;
     }
     
 }
@@ -68,14 +53,8 @@
     }
 
     // Home header
-    header {
-        margin-bottom: 75px;
-
-        nav {
-            ul {
-                flex-basis: 50%;
-            }
-        }
+    header nav ul {
+        flex-basis: 50%;
     }
     // Blog header
     .blogHeader {
@@ -177,7 +156,7 @@
         padding: 0 15px 25px 15px;
         transition: none;       
 
-        h4 {
+        h3 {
             @include fontSize(18)
         }
 
@@ -372,8 +351,8 @@
     // Contact page
     .contactMain {
 
-        h4 {
-            font-size: calc($heading4Size * 0.8);
+        h3 {
+            font-size: calc($heading3Size * 0.8);
         }
         p {
             font-size: calc($bodyFontSize * 0.8);
@@ -406,9 +385,9 @@
         }
     }
 
-    h4,
-    .links h4 a,
-    .links h4 a:first-child,
+    h3,
+    .links h3 a,
+    .links h3 a:first-child,
     .locationsLink a,
     .communityLink a,
     .blogLink a,
@@ -469,9 +448,9 @@
         .headingContainer {
             margin: 100px 0 0 25px;
 
-            h2 {
-                font-size: calc($heading2Size * 0.8);
-                line-height: calc($heading2Height * 0.8);
+            h1 {
+                font-size: calc($pageHeadingSize * 0.8);
+                line-height: calc($pageHeadingHeight * 0.8);
             }
         }
 
@@ -522,9 +501,9 @@
         .wrapper .headingContainer {
             margin: 100px auto;
         }
-        h2 {
-            font-size: calc($heading2Size * 0.8);
-            line-height: calc($heading2Height * 0.8);
+        h1 {
+            font-size: calc($pageHeadingSize * 0.8);
+            line-height: calc($pageHeadingHeight * 0.8);
         }
     }
 
@@ -638,8 +617,8 @@
         }
     }
 
-    .profile h3,
-    .about h3 {
+    .profile h2,
+    .about h2 {
         @include fontSize(20);
         margin-bottom: 0px;
     }

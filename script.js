@@ -1,12 +1,4 @@
-// hamburger menu requirements:
 
-// - display only at a certain screen size
-// - be sticky positioned above all other elements and have the menu positioned above as well.
-// - when closed, click to open and display the full nav on the page.
-//    - Transform the hamburger button into an "x". <i class="fa-solid fa-xmark-large"></i>
-//    - create an semi-transparent overlay to add contrast to the menu 
-// - when the menu is open, click the "X" to close again
-//     - remove the overlay and hide the navigation items
 
 // Create a variable that changes based on whether the menu is open or closed.
 let hamburgerOpen = false;
@@ -40,7 +32,7 @@ function closeHamburgerNav(){
     // The menu is now closed
     hamburgerOpen = false
     // remove the inline styling to allow the hamburger icon to be positioned offscreen.
-    hamburgerButton.style.transition = "0s";
+    hamburgerButton.style.transition = "none";
     hamburgerButton.style.left = "";
     hamburgerButton.style.top = "";
 }

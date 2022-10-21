@@ -17,7 +17,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 nav a,
 button {
     font-family: $headingFont, sans-serif;
@@ -33,6 +32,11 @@ h1 {
     line-height: $headerHeight;
 }
 
+.pageH1 {
+    font-size: $pageHeadingSize;
+    line-height: $pageHeadingHeight;
+}
+
 h2 {
     font-size: $heading2Size;
     line-height: $heading2Height;
@@ -42,11 +46,6 @@ h3 {
     font-size: $heading3Size;
     letter-spacing: $heading3Spacing;
     text-align: center;
-}
-
-h4 {
-    font-size: $heading4Size;
-    letter-spacing: $heading4Spacing;
 }
 
 // navigation
@@ -80,9 +79,10 @@ textarea {
 // Blog - About section typography
 
 .blogAbout {
-    h4 {
-        font-size: $blogHeading4Size;
+    h3 {
+        font-size: $blogHeading3Size;
         margin-bottom: 15px;
+        text-align: left;
     }
 
     a {

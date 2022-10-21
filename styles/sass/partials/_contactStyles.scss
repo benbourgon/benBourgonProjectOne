@@ -2,7 +2,7 @@
 // Contact - <header> styling
 
 .contactHeader {
-    height: 55vh;
+    min-height: 600px;
 
     .contactHeaderBG {
         background-image: url("../assets/contact-header.jpg");
@@ -27,8 +27,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            margin-top: 275px;
+            flex-wrap: wrap; 
             
         }
         h2 {

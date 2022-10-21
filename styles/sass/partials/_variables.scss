@@ -19,25 +19,26 @@ $buttonWeight: 700;
 // Font size variables
 $baseFontSize: 2rem; // With font size set to 62.5%, 2rem = 20px.
 $headerSize: 13.8rem;
-$heading2Size: 8.0rem;
-$heading3Size: 4.2rem;
-$heading4Size: 3.2rem;
+$pageHeadingSize: 8.0rem;
+$heading2Size: 4.2rem;
+$heading3Size: 3.2rem;
 $navigationFontSize: 2.0rem;
 $buttonFontSize: 2.0rem;
 $bodyFontSize: 2.0rem;
-$blogHeading4Size: 2.2rem;
+$blogHeading3Size: 2.2rem;
 
 // Line height variables;
 
 $headerHeight: 12.6rem;
-$heading2Height: 9.2rem;
+$pageHeadingHeight: 9.2rem;
+$heading2Height: 6.72rem;
 $navigationLineHeight: 2.9rem;
 $buttonLineHeight: 3.2rem;
 $bodyLineHeight: 3.2rem;
 
 // Letter spacing variables;
 
+$pageHeadingSpacing: 0.1rem;
 $heading3Spacing: 0.1rem;
-$heading4Spacing: 0.1rem;
 $navigationSpacing: 0.1rem;
 $buttonSpacing: 0.1rem;
