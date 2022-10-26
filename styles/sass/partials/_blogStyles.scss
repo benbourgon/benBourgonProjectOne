@@ -42,10 +42,12 @@
     
     .headingContainer {
         flex-basis: 100%;
-        margin: 10px 100px 0 0;
         display: flex;
         justify-content: center;
         align-items: flex-start;
+    }
+    .blogH1 {
+        margin-left: 55px;
     }
 }
 

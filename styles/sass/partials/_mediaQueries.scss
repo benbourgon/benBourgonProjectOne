@@ -153,6 +153,10 @@
         .headingContainer {
                 margin: 100px 0 0 0;
             }
+
+        .blogH1 {
+            margin-top: 0;
+        }
     }
 
     .blogAbout {
@@ -540,10 +544,10 @@
     header h1 {
         margin-bottom: 20px;
     }
-    .about h2 {
+    .about h2,
+    .blogMain h2 {
         @include fontSize(28)
     }
-
 }
 
 // Landscape phones to portrait modern phones

@@ -4,12 +4,16 @@
 .contactHeader {
     min-height: 600px;
 
+    .contactH1 {
+        margin-top: 0;
+        margin-bottom: 150px;
+    }
+
     .contactHeaderBG {
         background-image: url("../assets/contact-header.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 50vh;
     }
     .wrapper {
         display: flex;

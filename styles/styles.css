@@ -895,7 +895,6 @@ footer p {
 .blogHeader .headingContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 10px 100px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,6 +904,9 @@ footer p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.blogHeader .blogH1 {
+  margin-left: 55px;
 }
 
 .blogMain .wrapper {
@@ -1046,12 +1048,15 @@ footer p {
 .contactHeader {
   min-height: 600px;
 }
+.contactHeader .contactH1 {
+  margin-top: 0;
+  margin-bottom: 150px;
+}
 .contactHeader .contactHeaderBG {
   background-image: url("../assets/contact-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50vh;
 }
 .contactHeader .wrapper {
   display: -webkit-box;
@@ -1314,6 +1319,9 @@ footer p {
   }
   .blogHeader .headingContainer {
     margin: 100px 0 0 0;
+  }
+  .blogHeader .blogH1 {
+    margin-top: 0;
   }
   .blogAbout {
     padding: 0 15px 25px 15px;
@@ -1690,7 +1698,8 @@ footer p {
   header h1 {
     margin-bottom: 20px;
   }
-  .about h2 {
+  .about h2,
+.blogMain h2 {
     font-size: 28px;
     font-size: 2.8rem;
   }
