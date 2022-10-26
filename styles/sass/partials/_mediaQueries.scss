@@ -2,7 +2,7 @@
 
 // Very large monitor range
 @media (max-width: 1920px) {
-header {
+    header {
         min-height: 900px;
 
         .headerBG {
@@ -25,7 +25,12 @@ header {
     
 }
 @media (max-width: 1440px) {
-
+    header {
+        min-height: 700px;
+        .wrapper {
+            max-height: auto;
+        }
+    }
     // Contact page
     .contactHeader {
         max-height: 400px;
@@ -90,11 +95,9 @@ header {
 @media (max-width: 1186px) {
     // Home header
     header {
-        max-height: 700px;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
         .headerBG {
-            height: 70vh;
-            max-height: 560px;
+            min-height: 560px;
         }
         .wrapper {
             align-items: flex-start;
@@ -189,24 +192,24 @@ header {
 // Landscape tablet
 @media (max-width: 991px) {
         header {
-            height: auto;
-            max-height: 650px;
-            padding-bottom: 50px;
+            margin-bottom: 65px;
+            min-height: auto;
+            max-height: auto;
+            
+            .headerBG {
+                min-height: auto;
+            }
 
             nav ul {
                 position: static;
             }
-
-            .headerBG {
+            .wrapper {
                 height: auto;
-
-                .wrapper {
-                    height: auto;
-                }
             }
+        
             h1 {
-                margin-bottom: 25px;
-                margin-top: 75px;
+                margin-top: 55px;
+                margin-bottom: 50px;
             }
             .goldfish {
                 top: 120px;
@@ -366,8 +369,10 @@ header {
 @media (max-width: 790px) {
 
     header {
+
         h1 {
-            margin-top: 105px;
+            margin-top: 125px;
+            margin-bottom: 50px;
             font-size: calc($headerSize * 0.5);
             line-height: calc($headerHeight * 0.5);
         }
@@ -531,6 +536,16 @@ header {
     }
 }
 
+@media (max-width: 589px) {
+    header h1 {
+        margin-bottom: 20px;
+    }
+    .about h2 {
+        @include fontSize(28)
+    }
+
+}
+
 // Landscape phones to portrait modern phones
 @media (max-width: 493px) {
 
@@ -556,8 +571,7 @@ header {
         }   
     }
 
-    .profile h3,
-    .about h3 {
+    .profile h3 {
         @include fontSize(28);
     }
     .links {

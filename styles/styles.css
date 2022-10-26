@@ -484,7 +484,7 @@ form button:focus {
 }
 
 header {
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 }
 header .headerBG {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/header-image.jpg");
@@ -505,8 +505,6 @@ header .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80vh;
-  max-height: 900px;
 }
 header nav {
   -ms-flex-preferred-size: 100%;
@@ -562,7 +560,7 @@ header h1 {
       flex-wrap: wrap;
   -ms-flex-preferred-size: 33.3333333333%;
       flex-basis: 33.3333333333%;
-  height: 80%;
+  margin-top: 90px;
 }
 header .goldfish {
   width: 50%;
@@ -1212,6 +1210,12 @@ footer p {
   }
 }
 @media (max-width: 1440px) {
+  header {
+    min-height: 700px;
+  }
+  header .wrapper {
+    max-height: auto;
+  }
   .contactHeader {
     max-height: 400px;
   }
@@ -1255,12 +1259,10 @@ footer p {
 }
 @media (max-width: 1186px) {
   header {
-    max-height: 700px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   header .headerBG {
-    height: 70vh;
-    max-height: 560px;
+    min-height: 560px;
   }
   header .wrapper {
     -webkit-box-align: start;
@@ -1349,22 +1351,22 @@ footer p {
 }
 @media (max-width: 991px) {
   header {
-    height: auto;
-    max-height: 650px;
-    padding-bottom: 50px;
+    margin-bottom: 65px;
+    min-height: auto;
+    max-height: auto;
+  }
+  header .headerBG {
+    min-height: auto;
   }
   header nav ul {
     position: static;
   }
-  header .headerBG {
-    height: auto;
-  }
-  header .headerBG .wrapper {
+  header .wrapper {
     height: auto;
   }
   header h1 {
-    margin-bottom: 25px;
-    margin-top: 75px;
+    margin-top: 55px;
+    margin-bottom: 50px;
   }
   header .goldfish {
     top: 120px;
@@ -1516,7 +1518,8 @@ footer p {
 }
 @media (max-width: 790px) {
   header h1 {
-    margin-top: 105px;
+    margin-top: 125px;
+    margin-bottom: 50px;
     font-size: 6.9rem;
     line-height: 6.3rem;
   }
@@ -1683,6 +1686,15 @@ footer p {
     margin-top: 50px;
   }
 }
+@media (max-width: 589px) {
+  header h1 {
+    margin-bottom: 20px;
+  }
+  .about h2 {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+}
 @media (max-width: 493px) {
   .wrapper {
     width: 95%;
@@ -1705,8 +1717,7 @@ footer p {
   header .goldfish {
     width: 55%;
   }
-  .profile h3,
-.about h3 {
+  .profile h3 {
     font-size: 28px;
     font-size: 2.8rem;
   }
