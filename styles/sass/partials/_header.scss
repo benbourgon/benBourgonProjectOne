@@ -1,7 +1,5 @@
 header {
-    height: 100vh;
-    max-height: 1200px;
-    margin-bottom: 75px;
+    margin-bottom: 200px;
 
     .headerBG {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/header-image.jpg");
@@ -9,15 +7,13 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
-        height: 80vh;
+        min-height: 80vh;
         max-height: 900px;
     }
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 80vh;
-        max-height: 900px;
     }
     nav {
         flex-basis: 100%;
@@ -26,10 +22,11 @@ header {
         max-height: 75px;
 
         .hamburger {
-            position: absolute;
+            position: fixed;
             left: -5000px;
             @include fontSize (34);
             padding: 5px 10px;
+            z-index: 40;
 
             &:hover,
             &:focus,
@@ -56,7 +53,7 @@ header {
         justify-content: center;
         flex-wrap: wrap;
         flex-basis: calc(100% / 3);
-        height: 80%;
+        margin-top: 90px;
     }
 
     .goldfish {

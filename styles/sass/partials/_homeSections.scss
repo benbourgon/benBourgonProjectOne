@@ -55,7 +55,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-content: flex-start;
+            align-items: flex-start;
         }
     }
     .realNemo {
@@ -98,7 +98,7 @@
         display: flex;
         flex-basis: 45%;
         justify-content: space-between;
-        align-content: flex-start;
+        align-items: flex-start;
         margin-top: 25px;
 
         .contentBox {
@@ -108,19 +108,20 @@
             padding: 0 5px;
         }
     }
-
-    h4 a {
+    h3 {
         text-align: left;
-        padding-left: 0;
-        padding-right: 0;
-        font-size: $heading4Size;
-        letter-spacing: $heading4Spacing;
+        a {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: $heading3Size;
+            letter-spacing: $heading3Spacing;
 
-        &:hover,
-        &:focus {
-            color: $robinEggBlue;
-            outline: none;
-            border-bottom: 2px solid $robinEggBlue;
+            &:hover,
+            &:focus {
+                color: $robinEggBlue;
+                outline: none;
+                border-bottom: 2px solid $robinEggBlue;
+            }
         }
     }
     .icon {
@@ -139,7 +140,7 @@
         a {
             position: absolute;
             font-size: 2.5rem;
-            letter-spacing: $heading4Spacing;
+            letter-spacing: $heading3Spacing;
             color: $darkBlueGrey;
 
             &:hover,
@@ -150,7 +151,7 @@
     }
 
     .locationsLink a {
-        font-size: $heading4Size;
+        font-size: $heading3Size;
         top: -5%;
         left: -19%
     }

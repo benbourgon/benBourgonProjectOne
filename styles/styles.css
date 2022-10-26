@@ -241,7 +241,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 nav a,
 button {
   font-family: "Barlow", sans-serif;
@@ -257,20 +256,20 @@ h1 {
   line-height: 12.6rem;
 }
 
-h2 {
+.pageH1 {
   font-size: 8rem;
   line-height: 9.2rem;
 }
 
-h3 {
+h2 {
   font-size: 4.2rem;
-  letter-spacing: 0.1rem;
-  text-align: center;
+  line-height: 6.72rem;
 }
 
-h4 {
+h3 {
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 nav {
@@ -299,9 +298,10 @@ textarea {
   font-family: "Lato", sans-serif;
 }
 
-.blogAbout h4 {
+.blogAbout h3 {
   font-size: 2.2rem;
   margin-bottom: 15px;
+  text-align: left;
 }
 .blogAbout a {
   outline: none;
@@ -373,6 +373,32 @@ body .findOutMore {
 body .findOutMore:focus, body .findOutMore:hover {
   outline: 4px solid white;
 }
+body .navOpen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0C1423;
+  opacity: 0.9;
+  position: fixed;
+  left: 0;
+  top: -20px;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  border: 5px solid #86E0F9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+body .navOpen li a {
+  font-size: 2rem;
+}
 
 form {
   display: -webkit-box;
@@ -400,18 +426,23 @@ form input:hover, form input:focus {
 }
 form input::-webkit-input-placeholder {
   opacity: 1;
+  color: white;
 }
 form input::-moz-placeholder {
   opacity: 1;
+  color: white;
 }
 form input:-ms-input-placeholder {
   opacity: 1;
+  color: white;
 }
 form input::-ms-input-placeholder {
   opacity: 1;
+  color: white;
 }
 form input::placeholder {
   opacity: 1;
+  color: white;
 }
 form textarea,
 form button {
@@ -429,18 +460,23 @@ form textarea:hover, form textarea:focus {
 }
 form textarea::-webkit-input-placeholder {
   opacity: 1;
+  color: white;
 }
 form textarea::-moz-placeholder {
   opacity: 1;
+  color: white;
 }
 form textarea:-ms-input-placeholder {
   opacity: 1;
+  color: white;
 }
 form textarea::-ms-input-placeholder {
   opacity: 1;
+  color: white;
 }
 form textarea::placeholder {
   opacity: 1;
+  color: white;
 }
 form button:hover,
 form button:focus {
@@ -448,9 +484,7 @@ form button:focus {
 }
 
 header {
-  height: 100vh;
-  max-height: 1200px;
-  margin-bottom: 75px;
+  margin-bottom: 200px;
 }
 header .headerBG {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/header-image.jpg");
@@ -459,7 +493,7 @@ header .headerBG {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
   max-height: 900px;
 }
 header .wrapper {
@@ -471,8 +505,6 @@ header .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80vh;
-  max-height: 900px;
 }
 header nav {
   -ms-flex-preferred-size: 100%;
@@ -486,11 +518,12 @@ header nav {
   max-height: 75px;
 }
 header nav .hamburger {
-  position: absolute;
+  position: fixed;
   left: -5000px;
   font-size: 34px;
   font-size: 3.4rem;
   padding: 5px 10px;
+  z-index: 40;
 }
 header nav .hamburger:hover, header nav .hamburger:focus, header nav .hamburger:active {
   outline: 4px solid #86E0F9;
@@ -527,7 +560,7 @@ header h1 {
       flex-wrap: wrap;
   -ms-flex-preferred-size: 33.3333333333%;
       flex-basis: 33.3333333333%;
-  height: 80%;
+  margin-top: 90px;
 }
 header .goldfish {
   width: 50%;
@@ -622,8 +655,9 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .news .realNemo {
   display: -webkit-box;
@@ -684,8 +718,9 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 25px;
 }
 .links .locationsLink .contentBox,
@@ -698,14 +733,16 @@ footer p {
   margin-top: 6px;
   padding: 0 5px;
 }
-.links h4 a {
+.links h3 {
   text-align: left;
+}
+.links h3 a {
   padding-left: 0;
   padding-right: 0;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
 }
-.links h4 a:hover, .links h4 a:focus {
+.links h3 a:hover, .links h3 a:focus {
   color: #86E0F9;
   outline: none;
   border-bottom: 2px solid #86E0F9;
@@ -858,7 +895,6 @@ footer p {
 .blogHeader .headingContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 10px 100px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,6 +904,9 @@ footer p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.blogHeader .blogH1 {
+  margin-left: 55px;
 }
 
 .blogMain .wrapper {
@@ -1007,14 +1046,17 @@ footer p {
 }
 
 .contactHeader {
-  height: 55vh;
+  min-height: 600px;
+}
+.contactHeader .contactH1 {
+  margin-top: 0;
+  margin-bottom: 150px;
 }
 .contactHeader .contactHeaderBG {
   background-image: url("../assets/contact-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50vh;
 }
 .contactHeader .wrapper {
   display: -webkit-box;
@@ -1047,7 +1089,6 @@ footer p {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 275px;
 }
 .contactHeader .wrapper h2 {
   -ms-flex-preferred-size: 100%;
@@ -1158,45 +1199,34 @@ footer p {
 
 @media (max-width: 1920px) {
   header {
-    max-height: 900px;
+    min-height: 900px;
   }
   header .headerBG {
-    max-height: 640px;
+    min-height: 640px;
   }
-  header .headerBG .wrapper {
-    max-height: 640px;
-  }
-
   .profile .sharkBanner {
     height: 40vh;
   }
-
   .contactHeader {
-    max-height: 570px;
+    margin-bottom: 0;
   }
-  .contactHeader .contactHeaderBG {
-    height: 100%;
-  }
-  .contactHeader .wrapper {
-    height: 100%;
-    max-height: 100%;
-  }
-  .contactHeader .wrapper .headingContainer {
-    margin-top: 200px;
-  }
-
   .contactMain .wrapper {
-    margin-top: -175px;
+    margin-top: -200px;
   }
 }
 @media (max-width: 1440px) {
+  header {
+    min-height: 700px;
+  }
+  header .wrapper {
+    max-height: auto;
+  }
   .contactHeader {
     max-height: 400px;
   }
   .contactHeader .wrapper .headingContainer {
     margin-top: 100px;
   }
-
   .contactMain .wrapper {
     margin-top: -50px;
     height: auto;
@@ -1206,19 +1236,13 @@ footer p {
   .about {
     padding: 25px 75px 150px 75px;
   }
-
-  header {
-    margin-bottom: 75px;
-  }
   header nav ul {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-
   .blogHeader .headingContainer {
     margin: 10px 30px 0 0;
   }
-
   .news {
     margin-bottom: 50px;
   }
@@ -1240,12 +1264,10 @@ footer p {
 }
 @media (max-width: 1186px) {
   header {
-    max-height: 700px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   header .headerBG {
-    height: 70vh;
-    max-height: 560px;
+    min-height: 560px;
   }
   header .wrapper {
     -webkit-box-align: start;
@@ -1266,14 +1288,12 @@ footer p {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-
   .profile h3,
 .about h3,
 .blogPost h3 {
     font-size: 34px;
     font-size: 3.4rem;
   }
-
   .profile .sharkBanner {
     height: 30vh;
   }
@@ -1283,14 +1303,12 @@ footer p {
   .profile .wrapper .textContainer {
     margin-left: 75px;
   }
-
   .news {
     padding-bottom: 0;
   }
   .news .realNemo {
     padding-top: 25px;
   }
-
   .blogHeader {
     max-height: 700px;
     margin-bottom: 25px;
@@ -1302,13 +1320,15 @@ footer p {
   .blogHeader .headingContainer {
     margin: 100px 0 0 0;
   }
-
+  .blogHeader .blogH1 {
+    margin-top: 0;
+  }
   .blogAbout {
     padding: 0 15px 25px 15px;
     -webkit-transition: none;
     transition: none;
   }
-  .blogAbout h4 {
+  .blogAbout h3 {
     font-size: 18px;
     font-size: 1.8rem;
   }
@@ -1317,7 +1337,6 @@ footer p {
     font-size: 1.6rem;
     line-height: 2.56rem;
   }
-
   .contactMain .wrapper .contactFormSection {
     -ms-flex-preferred-size: 64%;
         flex-basis: 64%;
@@ -1327,7 +1346,6 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .contactFormSection form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1341,27 +1359,26 @@ footer p {
 }
 @media (max-width: 991px) {
   header {
-    height: auto;
-    max-height: 650px;
-    padding-bottom: 50px;
+    margin-bottom: 65px;
+    min-height: auto;
+    max-height: auto;
+  }
+  header .headerBG {
+    min-height: auto;
   }
   header nav ul {
     position: static;
   }
-  header .headerBG {
-    height: auto;
-  }
-  header .headerBG .wrapper {
+  header .wrapper {
     height: auto;
   }
   header h1 {
-    margin-bottom: 25px;
-    margin-top: 75px;
+    margin-top: 55px;
+    margin-bottom: 50px;
   }
   header .goldfish {
     top: 120px;
   }
-
   .news .newAdditions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1399,7 +1416,6 @@ footer p {
     box-shadow: -29px 39px 0px 0px #86E0F9;
     -webkit-box-shadow: -29px 39px 0px 0px #86E0F9;
   }
-
   .links {
     padding: 25px 0;
   }
@@ -1419,7 +1435,6 @@ footer p {
   .links .wrapper .contentBox {
     padding: 0 10px;
   }
-
   .profile .sharkBanner {
     max-height: 300px;
   }
@@ -1431,7 +1446,6 @@ footer p {
     -ms-flex-preferred-size: 59%;
         flex-basis: 59%;
   }
-
   .blogHeader {
     max-height: auto;
     height: auto;
@@ -1451,7 +1465,6 @@ footer p {
     -ms-flex-preferred-size: 33.3333333333%;
         flex-basis: 33.3333333333%;
   }
-
   .blogMain .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1503,8 +1516,7 @@ footer p {
   .blogMain .blogPost .imageContainer {
     max-width: 95%;
   }
-
-  .contactMain h4 {
+  .contactMain h3 {
     font-size: 2.56rem;
   }
   .contactMain p {
@@ -1514,7 +1526,8 @@ footer p {
 }
 @media (max-width: 790px) {
   header h1 {
-    margin-top: 105px;
+    margin-top: 125px;
+    margin-bottom: 50px;
     font-size: 6.9rem;
     line-height: 6.3rem;
   }
@@ -1530,10 +1543,9 @@ footer p {
     left: 85%;
     top: 20px;
   }
-
-  h4,
-.links h4 a,
-.links h4 a:first-child,
+  h3,
+.links h3 a,
+.links h3 a:first-child,
 .locationsLink a,
 .communityLink a,
 .blogLink a,
@@ -1541,11 +1553,9 @@ footer p {
     font-size: 26px;
     font-size: 2.6rem;
   }
-
   .about {
     padding: 25px 10px 150px 10px;
   }
-
   .profile .sharkBanner {
     max-height: 200px;
   }
@@ -1574,7 +1584,6 @@ footer p {
     -webkit-box-shadow: 30px 30px 0px 0px #86E0F9;
     box-shadow: 30px 30px 0px 0px #86E0F9;
   }
-
   .gallery ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1591,7 +1600,6 @@ footer p {
   .gallery ul li:nth-child(2) {
     margin: 25px 0;
   }
-
   .blogHeader {
     max-height: 650px;
     margin-bottom: 25px;
@@ -1599,14 +1607,13 @@ footer p {
   .blogHeader .headingContainer {
     margin: 100px 0 0 25px;
   }
-  .blogHeader .headingContainer h2 {
+  .blogHeader .headingContainer h1 {
     font-size: 6.4rem;
     line-height: 7.36rem;
   }
   .blogHeader .blogHeaderBG {
     height: auto;
   }
-
   .blogMain .blogAbout {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1642,7 +1649,6 @@ footer p {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-
   .contactHeader {
     max-height: auto;
     height: auto;
@@ -1653,11 +1659,10 @@ footer p {
   .contactHeader .wrapper .headingContainer {
     margin: 100px auto;
   }
-  .contactHeader h2 {
+  .contactHeader h1 {
     font-size: 6.4rem;
     line-height: 7.36rem;
   }
-
   .contactMain .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1681,21 +1686,28 @@ footer p {
     -ms-flex-preferred-size: 99%;
         flex-basis: 99%;
   }
-
   .contactFormSection form {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-
   .contactBody footer {
     margin-top: 50px;
+  }
+}
+@media (max-width: 589px) {
+  header h1 {
+    margin-bottom: 20px;
+  }
+  .about h2,
+.blogMain h2 {
+    font-size: 28px;
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 493px) {
   .wrapper {
     width: 95%;
   }
-
   header {
     margin-bottom: 25px;
   }
@@ -1708,19 +1720,16 @@ footer p {
   header nav .hamburger {
     font-size: 28px;
     font-size: 2.8rem;
-    top: 7px;
+    top: 10px;
     left: 80%;
   }
   header .goldfish {
     width: 55%;
   }
-
-  .profile h3,
-.about h3 {
+  .profile h3 {
     font-size: 28px;
     font-size: 2.8rem;
   }
-
   .links .locationsLink a {
     left: -26%;
   }
@@ -1733,7 +1742,6 @@ footer p {
   .links .getInTouchLink a {
     left: -19%;
   }
-
   .blogPost .postText p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -1744,7 +1752,6 @@ footer p {
     -webkit-box-shadow: -25px 25px 0px 0px #86E0F9;
     left: 25px;
   }
-
   .blogMain .blogAbout .imageContainer,
 .blogMain .blogAbout .blogAboutText,
 .blogMain .blogAbout .blogRecentPosts {
@@ -1754,7 +1761,6 @@ footer p {
   .blogMain .blogAbout .imageContainer {
     padding-top: 0;
   }
-
   .contactMain .wrapper .contactFormSection {
     margin: 50px auto;
   }
@@ -1764,24 +1770,20 @@ footer p {
     font-size: 1.6rem;
     line-height: 2.56rem;
   }
-
   header h1 {
     margin-bottom: 10px;
   }
-
-  .profile h3,
-.about h3 {
+  .profile h2,
+.about h2 {
     font-size: 20px;
     font-size: 2rem;
     margin-bottom: 0px;
   }
-
   .profile .wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-
   .contactFormSection .contactForm {
     padding: 10px;
   }
